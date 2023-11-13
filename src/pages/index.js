@@ -12,3 +12,4 @@ export { default as Result } from './Result';
 export { default as SignUp } from './SignUp';
 export { default as Submissions } from './Submissions';
 export { default as Video } from './Video';
+export { default as Service } from './Service';
