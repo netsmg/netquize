@@ -9,7 +9,9 @@ export { default as Quiz } from './Quiz';
 export { default as Quizzes } from './Quizzes';
 export { default as Reset } from './Reset';
 export { default as Result } from './Result';
+export { default as Service } from './Service';
+
 export { default as SignUp } from './SignUp';
 export { default as Submissions } from './Submissions';
+
 export { default as Video } from './Video';
-export { default as Service } from './Service';
