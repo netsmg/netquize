@@ -1,6 +1,6 @@
 
 
-const Result = ({ selectedAnswers }) => {
+const Resulto = ({ selectedAnswers }) => {
   // Implement your result calculation logic based on selected answers
   // For simplicity, assuming correct answers are known in advance
   const correctAnswers = {
@@ -34,4 +34,4 @@ const Result = ({ selectedAnswers }) => {
   );
 };
 
-export default Result;
+export default Resulto;
