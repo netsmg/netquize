@@ -33,6 +33,7 @@ import {
   Result,
   SignUp,
   Submissions,
+  Service,
   Video
 } from './pages';
 
@@ -56,6 +57,7 @@ function Root() {
             <Route element={<Video />} errorElement={<PageNotFound />} path="video/:id" />
             <Route element={<Profile />} path="profile" />
             <Route element={<Submissions />} path="submissions" />
+            <Route element={<Service />} path="service" />
             <Route
               element={<DetailedSubmission />}
               errorElement={<PageNotFound />}
