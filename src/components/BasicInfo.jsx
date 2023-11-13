@@ -30,7 +30,7 @@ const reasons = [
 function BasicInfo() {
   return (
     <>
-      <div className="my-32 w-full overflow-x-hidden border-y-2 border-black bg-primary py-10 drop-shadow-lg dark:border-white">
+      <div className="my-32 w-full rounded-lg shadow-xl px-4 py-2 text-center font-semibold uppercase tracking-wide text-black md:text-xl">
         <div className="mx-auto grid w-[calc(100vw-25%)] grid-cols-2 gap-10 md:grid-cols-4">
           <p className="stat">
             <CountUpAnimation end={200} />
