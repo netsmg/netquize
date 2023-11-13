@@ -22,6 +22,7 @@ import { AuthProvider } from './contexts/AuthContext';
 import {
   About,
   Blog,
+  BlogPostDetails,
   DetailedSubmission,
   Home,
   Learn,
@@ -49,7 +50,11 @@ function Root() {
           <Route element={<About />} path="/about" />
           <Route element={<Reset />} path="/reset" />
           <Route element={<Learn />} path="/learn" />
-          <Route element={<Blog />} path="/blog" />
+           <Route path="/blog" element={<Blog />} />
+        {/* Dynamically generate routes for each blog post */}
+        {blogData.map((post) => (
+          <Route key={post.id} path={`/${post.id}`} element={<BlogPostDetails post={post} />} />
+        ))}
           <Route element={<PublicOutlet />} path="/">
             <Route element={<SignUp />} path="signup" />
             <Route element={<Login />} path="login" />
