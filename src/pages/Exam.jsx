@@ -7,7 +7,7 @@ const Exam = () => {
   useEffect(() => {
     // Fetch questions from JSON or your API
     // Replace 'path/to/questions.json' with your actual path
-    fetch('questions.json')
+    fetch('https://firebasestorage.googleapis.com/v0/b/contact-database-9c47b.appspot.com/o/questions.json?alt=media&token=15516059-3a35-4829-aa8f-2d1fabd53041')
       .then((response) => response.json())
       .then((data) => setQuestions(data.questions))
       .catch((error) => console.error('Error fetching questions:', error));
