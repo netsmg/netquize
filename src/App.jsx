@@ -50,14 +50,13 @@ function Root() {
           <Route element={<About />} path="/about" />
           <Route element={<Reset />} path="/reset" />
           <Route element={<Learn />} path="/learn" />
-           <Route path="/blog" element={<Blog />} />
-        {/* Dynamically generate routes for each blog post */}
-        {blogData.map((post) => (
-          <Route key={post.id} path={`/${post.id}`} element={<BlogPostDetails post={post} />} />
-        ))}
+           
+      
           <Route element={<PublicOutlet />} path="/">
             <Route element={<SignUp />} path="signup" />
             <Route element={<Login />} path="login" />
+            <Route element={<Blog />} path="blog" />
+            <Route element={<BlogPostDetails />} path="blogpostdetails" />
           </Route>
           <Route element={<PrivateOutlet />} path="/">
             <Route element={<Quiz />} errorElement={<PageNotFound />} path="quiz/:id" />
