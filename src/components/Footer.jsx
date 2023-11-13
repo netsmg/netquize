@@ -8,9 +8,9 @@ function Footer() {
       <div className="md:mr-10 md:flex md:justify-between">
         <div className="mb-6 md:mb-0">
           <Link className="flex items-center" to="/">
-            <img alt="Quizzy Logo" className="mr-1 h-9 rounded-full" src={logo} />
+            <img alt="Netquize Logo" className="mr-1 h-9 rounded-full" src={logo} />
             <span className="self-center whitespace-nowrap text-2xl font-semibold text-primary">
-              Quizzy
+              NetQuize
             </span>
           </Link>
         </div>
@@ -36,7 +36,7 @@ function Footer() {
               <li className="mb-4">
                 <Link
                   className="hover:underline "
-                  href="https://github.com/s4shibam"
+                  href="https://github.com/netsmg"
                   rel="noreferrer"
                   target="_blank"
                 >
@@ -76,26 +76,26 @@ function Footer() {
       <div className="flex flex-col justify-center text-sm md:mr-10 md:flex-row md:items-center md:justify-between">
         <div className="text-center md:text-left">
           <span className="mb-1 block ">
-            Developed with 💚 by &nbsp;
+            Developed with;
             <Link
               className="cursor-pointer hover:underline"
               href="https://www.shibamsaha.dev"
               rel="noreferrer"
               target="_blank"
             >
-              Shibam Saha.
+              SMG Inc.
             </Link>
           </span>
           <span>
             © 2023{' '}
             <Link className="hover:underline" to="/">
-              Quizzy.
+              NetQuize
             </Link>
             &ensp;All Rights Reserved.
           </span>
         </div>
         <div className="mx-auto mt-4 flex w-fit space-x-6 sm:justify-center md:mx-0 md:mt-0">
-          <Link href="https://www.facebook.com/s4shibam">
+          <Link href="https://www.facebook.com/">
             <svg aria-hidden="true" className="h-5 w-5 dark:fill-white" viewBox="0 0 24 24">
               <path
                 clipRule="evenodd"
@@ -105,7 +105,7 @@ function Footer() {
             </svg>
             <span className="sr-only">Facebook page</span>
           </Link>
-          <Link href="https://www.instagram.com/s4shibam/">
+          <Link href="https://www.instagram.com/">
             <svg aria-hidden="true" className="h-5 w-5 dark:fill-white" viewBox="0 0 24 24">
               <path
                 clipRule="evenodd"
@@ -115,13 +115,13 @@ function Footer() {
             </svg>
             <span className="sr-only">Instagram page</span>
           </Link>
-          <Link href="https://twitter.com/s4shibam">
+          <Link href="https://twitter.com/">
             <svg aria-hidden="true" className="h-5 w-5 dark:fill-white" viewBox="0 0 24 24">
               <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
             </svg>
             <span className="sr-only">Twitter page</span>
           </Link>
-          <Link href="https://github.com/s4shibam" rel="noreferrer" target="_blank">
+          <Link href="https://github.com/" rel="noreferrer" target="_blank">
             <svg aria-hidden="true" className="h-5 w-5 dark:fill-white" viewBox="0 0 24 24">
               <path
                 clipRule="evenodd"
