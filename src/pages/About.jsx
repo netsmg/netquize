@@ -1,21 +1,21 @@
 const aboutDetails = [
-  `Welcome to Quizzy, the premier destination for free coding quizzes! Our goal is to provide you with a fun and challenging way to test your coding knowledge and skills. We offer a wide range of quizzes covering various programming languages, algorithms, data structures, and more. `,
+  `Welcome to NetQuize, the premier destination for free coding quizzes! Our goal is to provide you with a fun and challenging way to test your coding knowledge and skills. We offer a wide range of quizzes covering various programming languages, algorithms, data structures, and more. `,
 
-  `At Quizzy, we believe that learning to code should be accessible to everyone, which is why we offer all of our quizzes for free. Whether you're a beginner or an experienced programmer, our quizzes are designed to help you improve your skills and stay up-to-date with the latest trends in the coding domain.`,
+  `At NetQuize, we believe that learning to code should be accessible to everyone, which is why we offer all of our quizzes for free. Whether you're a beginner or an experienced programmer, our quizzes are designed to help you improve your skills and stay up-to-date with the latest trends in the coding domain.`,
 
   `We offer a variety of quizzes that are designed to challenge you at every level. From multiple-choice questions to coding challenges, our quizzes are designed to test your knowledge in a fun and engaging way. Quizzy provide immediate feedback on users answers, helping them to learn and improve their knowledge. For that reason Quizzy can be used for educational purposes or just for entertainment. And most interestingly all of these features are accessible for free. In addition to providing free coding quizzes, Quizzy also offers a wealth of resources for coders of all levels. Our website features helpful tutorials, tips and tricks, and guides to help you improve your coding skills. We believe that everyone should have access to quality coding education, regardless of their experience or financial situation.`,
 
   `Our team of expert coders and educators work tirelessly to create and curate high-quality quizzes and resources that are both challenging and informative. Our quizzes are updated regularly to reflect the latest trends and technologies in the coding domain, so you can be sure that you're learning the most up-to-date information.`,
 
-  `Thank you for choosing Quizzy as your go-to source for free coding quizzes and resources. We hope you enjoy learning and growing with us!`
+  `Thank you for choosing NetQuize as your go-to source for free coding quizzes and resources. We hope you enjoy learning and growing with us!`
 ];
 
 function About() {
   return (
-    <div className="mx-auto flex w-[85%] animate-reveal flex-col items-center justify-center">
+    <div className="mx-auto flex w-[100%] animate-reveal flex-col items-center justify-center">
       <h1 className="page-heading">About Quizzy</h1>
 
-      <div className="card flex max-w-4xl flex-col gap-10 p-6 text-justify font-medium dark:text-red-300 sm:w-3/5 sm:text-xl">
+      <div className="card flex max-w-4xl flex-col gap-10 p-6 text-justify font-medium sm:w-3/5 sm:text-xl rounded-lg shadow-xl px-4 py-2 text-center font-semibold uppercase tracking-wide text-black">
         {aboutDetails.map((para, index2) => (
           <p
             key={index2}
@@ -27,14 +27,14 @@ function About() {
       </div>
 
       <span className="mt-14 block font-semibold tracking-wide">
-        Developed with 💚 by &nbsp;
+        Developed by &nbsp;
         <a
           className="cursor-pointer hover:underline"
-          href="https://www.shibamsaha.dev"
+          href="https://netquize.vercel.app"
           rel="noreferrer"
           target="_blank"
         >
-          Shibam Saha.
+          SMG Inc.
         </a>
       </span>
 
