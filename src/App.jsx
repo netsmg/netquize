@@ -21,6 +21,7 @@ import { AuthProvider } from './contexts/AuthContext';
 // Website Pages
 import {
   About,
+  Blog,
   DetailedSubmission,
   Home,
   Learn,
@@ -48,6 +49,7 @@ function Root() {
           <Route element={<About />} path="/about" />
           <Route element={<Reset />} path="/reset" />
           <Route element={<Learn />} path="/learn" />
+          <Route element={<Blog />} path="/blog" />
           <Route element={<PublicOutlet />} path="/">
             <Route element={<SignUp />} path="signup" />
             <Route element={<Login />} path="login" />
