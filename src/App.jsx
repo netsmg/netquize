@@ -39,6 +39,26 @@ import {
   Video
 } from './pages';
 
+const blogData = [
+  {
+    id: 1,
+    imageUrl: 'https://codewithsadee.github.io/vast/assets/images/blog-1.jpg',
+    date: 'May 22, 2022',
+    comments: 2,
+    title: 'Build A Full Web Chat App From Scratch',
+    link: '/blog/1', // This is the link to the detailed blog post page
+  },
+  {
+    id: 2,
+    imageUrl: 'https://codewithsadee.github.io/vast/assets/images/blog-2.jpg',
+    date: 'June 10, 2022',
+    comments: 5,
+    title: 'Brush Strokes Energize Trees In Paintings',
+    link: '/blog/2',
+  },
+  // Add more blog entries as needed
+];
+
 function Root() {
   return (
     <>
