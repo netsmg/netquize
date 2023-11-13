@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import { coding, hero, logo } from '../assets';
-import { BasicInfo, ContactUs, Footer, PopularQuizzes } from '../components';
+import { BasicInfo, ContactUs, Footer } from '../components';
 
 function Home() {
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -46,13 +46,13 @@ function Home() {
           </span>
           Platform you have ever seen!
         </p>
-        <p className="rounded-lg bg-primary px-4 py-2 text-center font-semibold uppercase tracking-wide text-black md:text-xl">
+        <p className="rounded-lg shadow-xl px-4 py-2 text-center font-semibold uppercase tracking-wide text-black md:text-xl">
           Quizzes are like a mental workout, except you don&apos;t need to break a sweat!
         </p>
       </div>
 
       <BasicInfo />
-      <PopularQuizzes />
+      
       <ContactUs />
       <Footer />
     </div>
