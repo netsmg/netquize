@@ -24,6 +24,8 @@ import {
   Blog,
   BlogPostDetails,
   DetailedSubmission,
+  Dashboard,
+  Exam,
   Home,
   Learn,
   Login,
@@ -33,6 +35,7 @@ import {
   Quizzes,
   Reset,
   Result,
+  Resulto,
   SignUp,
   Submissions,
   Service,
@@ -71,6 +74,13 @@ function Root() {
           <Route element={<Reset />} path="/reset" />
           <Route element={<Learn />} path="/learn" />
            <Route element={<SignUp />} path="/signup" />
+          <Route element={<Resulto />} path="/resulto" />
+<Route element={<Exam />} path="/exam" />
+<Route element={<Dashboard />} path="/dashboard" />
+
+
+
+          
            
       
            <Route path="/" element={<PublicOutlet />}>
