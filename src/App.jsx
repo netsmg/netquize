@@ -70,6 +70,7 @@ function Root() {
           <Route element={<About />} path="/about" />
           <Route element={<Reset />} path="/reset" />
           <Route element={<Learn />} path="/learn" />
+           <Route element={<SignUp />} path="/signup" />
            
       
            <Route path="/" element={<PublicOutlet />}>
