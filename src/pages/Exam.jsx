@@ -7,7 +7,7 @@ const Exam = () => {
   useEffect(() => {
     // Fetch questions from JSON or your API
     // Replace 'path/to/questions.json' with your actual path
-    fetch('path/to/questions.json')
+    fetch('questions.json')
       .then((response) => response.json())
       .then((data) => setQuestions(data.questions))
       .catch((error) => console.error('Error fetching questions:', error));
