@@ -9,7 +9,7 @@ const Blog = () => {
       date: 'May 22, 2022',
       comments: 2,
       title: 'Build A Full Web Chat App From Scratch',
-      link: '#',
+      link: 'blog/1',
     },
     {
       id: 2,
@@ -17,7 +17,7 @@ const Blog = () => {
       date: 'jun 11, 2022',
       comments: 2,
       title: 'Build A Full Web with html css From Scratch',
-      link: '#',
+      link: 'blog/2',
     },
     {
       id: 3,
@@ -25,7 +25,7 @@ const Blog = () => {
       date: 'jul 12, 2022',
       comments: 2,
       title: 'Build A Full Web Chat App From Scratch',
-      link: '#',
+      link: 'blog/3',
     },
     // Add more blog entries as needed
   ];
