@@ -50,9 +50,9 @@ function BasicInfo() {
           </p>
         </div>
       </div>
-      <div className="mb-20 w-[85%]">
+      <div className="mb-20 w-[85%] hidden">
         <p className="mb-20 text-center text-4xl font-bold uppercase tracking-wider lg:text-5xl">
-          Why Quizzy?
+          Why NetQuize?
         </p>
         <div className="grid grid-cols-1 place-content-center gap-x-10 gap-y-16 xl:grid-cols-2 2xl:grid-cols-4">
           {reasons.map((reason, index) => (
