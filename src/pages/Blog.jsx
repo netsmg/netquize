@@ -11,11 +11,28 @@ const Blog = () => {
       title: 'Build A Full Web Chat App From Scratch',
       link: '#',
     },
+    {
+      id: 2,
+      imageUrl: 'https://codewithsadee.github.io/vast/assets/images/blog-1.jpg',
+      date: 'jun 11, 2022',
+      comments: 2,
+      title: 'Build A Full Web with html css From Scratch',
+      link: '#',
+    },
+    {
+      id: 3,
+      imageUrl: 'https://codewithsadee.github.io/vast/assets/images/blog-1.jpg',
+      date: 'jul 12, 2022',
+      comments: 2,
+      title: 'Build A Full Web Chat App From Scratch',
+      link: '#',
+    },
     // Add more blog entries as needed
   ];
 
   return (
     <section className="section blog" aria-label="blog">
+      <div className="mx-8 flex flex-col items-center justify-center gap-2">
       <div className="container9">
         <p className="section-subtitle">Recent Blogs</p>
         <h2 className="h2 section-title">Our Tips And Latest News</h2>
@@ -57,6 +74,7 @@ const Blog = () => {
           ))}
         </ul>
       </div>
+        </div>
     </section>
   );
 };
