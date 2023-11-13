@@ -1,4 +1,4 @@
-
+import React from 'react';
 
 const Resulto = ({ selectedAnswers }) => {
   // Implement your result calculation logic based on selected answers
