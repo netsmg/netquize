@@ -11,9 +11,9 @@ function MainNavigationBar() {
         <ul className="flex items-center justify-between">
           <li>
             <Link className="flex items-center justify-center" to="/">
-              <img alt="Quizzy" className="mr-2 w-9 xl:w-11" src={logo} />
+              <img alt="NetQuize" className="mr-2 w-9 xl:w-11" src={logo} />
               <h3 className="block text-xl font-bold uppercase leading-5 tracking-wider text-primary sm:text-2xl">
-                Quizzy
+                NetQuize
               </h3>
             </Link>
           </li>
