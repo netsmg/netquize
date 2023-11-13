@@ -1,0 +1,25 @@
+{
+  "mcqQuestions": {
+    "question1": {
+      "id": "question1",
+      "text": "What is the capital of France?",
+      "options": {
+        "option1": { "id": "option1", "text": "Paris" },
+        "option2": { "id": "option2", "text": "Berlin" },
+        "option3": { "id": "option3", "text": "London" }
+      },
+      "correctOption": "option1"
+    },
+    "question2": {
+      "id": "question2",
+      "text": "Which planet is known as the Red Planet?",
+      "options": {
+        "option1": { "id": "option1", "text": "Earth" },
+        "option2": { "id": "option2", "text": "Mars" },
+        "option3": { "id": "option3", "text": "Venus" }
+      },
+      "correctOption": "option2"
+    },
+    // Add more questions as needed
+  }
+}
