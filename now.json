@@ -1,0 +1,11 @@
+{
+	"name": "NetQuize",
+	"alias": "netquize",
+	"version": 2,
+	"builds": [
+		{
+			"src": "**/*",
+			"use": "@now/static"
+		}
+	]
+}
