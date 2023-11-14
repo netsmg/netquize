@@ -10,6 +10,7 @@ const Blog = () => {
       comments: 2,
       title: 'Build A Full Web Chat App From Scratch',
       link: 'blog/1',
+      details: 'In today's digital age, blogging has become a powerful medium for individuals, businesses, and creators to share their thoughts, ideas, and expertise with the world. One of the most popular platforms for creating a blog is Blogger, a user-friendly platform owned by Google. Whether you're a beginner looking to start a personal blog or an aspiring professional blogger aiming to reach a wider audience, this guide will take you through the step-by-step process of creating a blog in Blogger, from the basics to pro-level strategies.',
     },
     {
       id: 2,
@@ -18,6 +19,7 @@ const Blog = () => {
       comments: 2,
       title: 'Build A Full Web with html css From Scratch',
       link: 'blog/2',
+  details: 'In today's digital age, blogging has become a powerful medium for individuals, businesses, and creators to share their thoughts, ideas, and expertise with the world. One of the most popular platforms for creating a blog is Blogger, a user-friendly platform owned by Google. Whether you're a beginner looking to start a personal blog or an aspiring professional blogger aiming to reach a wider audience, this guide will take you through the step-by-step process of creating a blog in Blogger, from the basics to pro-level strategies.'
     },
     {
       id: 3,
@@ -26,6 +28,7 @@ const Blog = () => {
       comments: 2,
       title: 'Build A Full Web Chat App From Scratch',
       link: 'blog/3',
+        details: 'In today's digital age, blogging has become a powerful medium for individuals, businesses, and creators to share their thoughts, ideas, and expertise with the world. One of the most popular platforms for creating a blog is Blogger, a user-friendly platform owned by Google. Whether you're a beginner looking to start a personal blog or an aspiring professional blogger aiming to reach a wider audience, this guide will take you through the step-by-step process of creating a blog in Blogger, from the basics to pro-level strategies.'
     },
     // Add more blog entries as needed
   ];
