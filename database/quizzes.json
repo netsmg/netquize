@@ -15,16 +15,9 @@
         {
           "title": "Who invented C++?",
           "options": [
-            {
-              "title": "Dennis Ritchie"
-            },
-            {
-              "title": "Brian Kernighan"
-            },
-            {
-              "title": "Bjarne Stroustrup",
-              "correct": true
-            },
+            { "title": "Dennis Ritchie" },
+            { "title": "Brian Kernighan" },
+            { "title": "Bjarne Stroustrup", "correct": true },
             // ... other options
           ]
         },
@@ -36,10 +29,7 @@
         {
           "title": "How to declare JavaScript variables?",
           "options": [
-            {
-              "title": "with var",
-              "correct": true
-            },
+            { "title": "with var", "correct": true },
             // ... other options
           ]
         },
