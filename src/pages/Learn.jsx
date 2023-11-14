@@ -32,7 +32,7 @@ function Learn() {
         </div>
 
         <div className="flex items-center justify-center text-center text-xl">
-          {!loading && shuffledData.length === 0 && <>No data found! </>}
+          {!loading && shuffledData.length === 0 && <>No data found! Perhaps you are not registerd user only registered user can get access.To get access fill up the contact-form. </>}
           {error && <>There was an error! </>}
           {loading && <>Loading ...</>}
         </div>
