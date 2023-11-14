@@ -125,7 +125,7 @@ function Root() {
           <Route element={<PageNotFound />} path="*" />
         </Route>
       </Routes>
-    </>
+      </Route>
   );
 }
 
