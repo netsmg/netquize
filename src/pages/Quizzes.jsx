@@ -28,7 +28,7 @@ function Quizzes() {
 
         <div className="flex items-center justify-center text-center text-xl">
           {!loading && data.length === 0 && <>No data found!</>}
-          {error && <>There was an error!</>}
+          {error && <>There was an error! Perhaps you are not registerd user only registered user can get access.To get access fill up the contact-form.</>}
           {loading && <>Loading ...</>}
         </div>
       </div>
