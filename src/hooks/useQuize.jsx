@@ -4,7 +4,7 @@
 import { useEffect, useState } from 'react';
 import { getDatabase, ref, child, get } from 'firebase/database';
 
-function Quiz(quizId) {
+function useQuize(quizId) {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [quiz, setQuiz] = useState(null);
@@ -35,4 +35,4 @@ function Quiz(quizId) {
   return { loading, error, quiz };
 }
 
-export default Quiz;
+export default useQuize;
