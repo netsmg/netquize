@@ -1,0 +1,48 @@
+{
+  "topics": {
+    "1": {
+      "topicID": "CPP",
+      "title": "C++ is faster than J... No! It's the fastest",
+      "noq": 10
+    },
+    "2": {
+      "topicID": "JavaScript",
+      "title": "JavaScript is weird but you can not neglect it",
+      "noq": 5
+    },
+    "3": {
+      "topicID": "Tailwind-CSS",
+      "title": "Tailwind is nothing but CSS with a pinch of salt",
+      "noq": 4
+    },
+    "4": {
+      "topicID": "React-JS",
+      "title": "React makes it painless to create interactive UIs",
+      "noq": 5
+    },
+    "5": {
+      "topicID": "HTML",
+      "title": "HTML is the white skeleton of web pages",
+      "noq": 5
+    },
+    "6": {
+      "topicID": "Github",
+      "title": "Github remembers everything you do with it",
+      "noq": 5
+    },
+    "7": {
+      "topicID": "CPP-STL",
+      "title": "CPP STL is the Library to save lives along with time",
+      "noq": 5
+    },
+    "8": {
+      "topicID": "SQL",
+      "title": "SQL - No one else can manage data like it",
+      "noq": 5
+    },
+    "9": {
+      "topicID": "Python",
+      "title": "Python is the Self Reliant Maverick Giant",
+      "noq": 4}
+          ]
+        }
