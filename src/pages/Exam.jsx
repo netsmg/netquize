@@ -1,58 +1,71 @@
-import React, { useState, useEffect } from 'react';
 
-const Exam = () => {
-  const [questions, setQuestions] = useState([]);
-  const [selectedAnswers, setSelectedAnswers] = useState({});
+
+function Exam() {
+  const { id } = useParams();
+  const { loading, error, quiz } = useQuiz(id);
+  const [qnaSet, dispatch] = useReducer(reducer, initialState);
+  const { currentUser } = useAuth();
+  const navigate = useNavigate();
+  const date = useMemo(() => new Date(), []);
 
   useEffect(() => {
-    // Fetch questions from JSON or your API
-    // Replace 'path/to/questions.json' with your actual path
-    fetch('https://firebasestorage.googleapis.com/v0/b/contact-database-9c47b.appspot.com/o/questions.json?alt=media&token=15516059-3a35-4829-aa8f-2d1fabd53041')
-      .then((response) => response.json())
-      .then((data) => setQuestions(data.questions))
-      .catch((error) => console.error('Error fetching questions:', error));
-  }, []);
+    dispatch({
+      type: 'quiz',
+      value: quiz
+    });
+  }, [quiz]);
 
-  const handleAnswerSelect = (questionId, selectedOption) => {
-    setSelectedAnswers((prevAnswers) => ({
-      ...prevAnswers,
-      [questionId]: selectedOption,
-    }));
-  };
+  // Answer option selection
+  const handleAnswerChange = useCallback(
+    (e, questionIndex, optionIndex) => {
+      dispatch({
+        type: 'answer',
+        questionID: questionIndex,
+        optionIndex: optionIndex,
+        value: e.target.checked
+      });
+    },
+    [dispatch]
+  );
 
-  const handleSubmit = () => {
-    // Handle submission logic here, e.g., calculate score, show results, etc.
-    console.log('Selected Answers:', selectedAnswers);
-    // Redirect to the result page or perform other actions based on the user's answers
-  };
+  // Submit Quiz and store result in the database
+  const submitQuiz = useCallback(async () => {
+    // ... (existing logic)
+  }, [currentUser, date, id, navigate, qnaSet]);
 
   return (
-    <div className="exam-container">
-      <h1>Exam</h1>
-      {questions.map((question) => (
-        <div key={question.id} className="question-container">
-          <h3>{question.text}</h3>
-          <ul>
-            {question.options.map((option) => (
-              <li key={option.id}>
-                <label>
-                  <input
-                    type="radio"
-                    name={`question_${question.id}`}
-                    value={option.id}
-                    checked={selectedAnswers[question.id] === option.id}
-                    onChange={() => handleAnswerSelect(question.id, option.id)}
-                  />
-                  {option.text}
-                </label>
-              </li>
+    <>
+      {loading && <p className="page-heading text-lg">Loading ...</p>}
+      {error && <PageNotFound />}
+      {!loading && !error && qnaSet && qnaSet?.length === 0 && <PageNotFound />}
+      {!loading && !error && qnaSet && qnaSet?.length > 0 && (
+        <div className="mx-auto w-[85%] animate-reveal">
+          <h1 className="page-heading">{id.split('-').join(' ')} Quiz!</h1>
+          <Rules />
+          <div className="card mb-40 flex flex-col justify-center rounded-md p-3">
+            {qnaSet.map((question, questionIndex) => (
+              <div key={questionIndex} className="mb-8">
+                <div className="flex flex-col items-center justify-center text-xl font-bold text-black dark:text-white sm:text-3xl">
+                  Q. {question.title}
+                </div>
+                <hr className="mb-3 mt-3 h-px border-0 bg-primary" />
+                <AnswerBox
+                  input
+                  handleChange={(e, optionIndex) =>
+                    handleAnswerChange(e, questionIndex, optionIndex)
+                  }
+                  options={question.options}
+                />
+              </div>
             ))}
-          </ul>
+          </div>
+          <button onClick={submitQuiz} className="btn btn-primary">
+            Submit Quiz
+          </button>
         </div>
-      ))}
-      <button onClick={handleSubmit}>Submit</button>
-    </div>
+      )}
+    </>
   );
-};
+}
 
 export default Exam;
