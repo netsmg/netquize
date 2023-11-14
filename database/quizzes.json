@@ -45,5 +45,57 @@
       "title": "Python is the Self Reliant Maverick Giant",
       "noq": 4
     }
-  }
+  },
+  "quizzes": [
+    {
+      "title": "Dennis Ritchie"
+    },
+    {
+      "title": "Brian Kernighan"
+    },
+    {
+      "title": "Bjarne Stroustrup",
+      "correct": true
+    },
+    {
+      "title": "Guido van Rossum"
+    },
+    {
+      "title": "James Gosling"
+    },
+    {
+      "title": "Gennady Korotkevich"
+    }
+  ],
+  "questions": [
+    {
+      "title": "Which of the following is the correct identifier?",
+      "options": [
+        { "title": "$var_name" },
+        { "title": "VAR_123", "correct": true },
+        { "title": "varname@" },
+        { "title": "--var-name" },
+        { "title": "v_a_r_n_a_m_e", "correct": true },
+        { "title": "None of the above" }
+      ]
+    },
+    {
+      "title": "Which of the following is the address operator?",
+      "options": [
+        { "title": "@ (At)" },
+        { "title": "# (Hashtag)" },
+        { "title": "& (And)", "correct": true },
+        { "title": "% (Percentage)" },
+        { "title": "* (Asterisk)" },
+        { "title": "! (Exclamation)" }
+      ]
+    },
+    {
+      "title": "Which of the following syntax is correct to create a comment in the C++ program?",
+      "options": [
+        { "title": "// Comment", "correct": true },
+        { "title": "/ Comment /" }
+      ]
+    }
+  ]
 }
