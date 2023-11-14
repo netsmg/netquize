@@ -1,56 +1,80 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import firebase from 'firebase/app';
+import 'firebase/database';
 
 const Exam = () => {
-  const [questions, setQuestions] = useState([]);
-  const [selectedAnswers, setSelectedAnswers] = useState({});
+  const [topicID, setTopicID] = useState('');
+  const [title, setTitle] = useState('');
+  const [noq, setNoq] = useState('');
 
-  useEffect(() => {
-    // Fetch questions from JSON or your API
-    // Replace 'path/to/questions.json' with your actual path
-    fetch('https://firebasestorage.googleapis.com/v0/b/contact-database-9c47b.appspot.com/o/questions.json?alt=media&token=15516059-3a35-4829-aa8f-2d1fabd53041')
-      .then((response) => response.json())
-      .then((data) => setQuestions(data.questions))
-      .catch((error) => console.error('Error fetching questions:', error));
-  }, []);
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
 
-  const handleAnswerSelect = (questionId, selectedOption) => {
-    setSelectedAnswers((prevAnswers) => ({
-      ...prevAnswers,
-      [questionId]: selectedOption,
-    }));
-  };
+    // Initialize Firebase (replace with your own config)
+    const firebaseConfig = {
+      apiKey: "AIzaSyBzzaSTr42firr3fx5YcdXhDzB4iBLVBOM",
+  authDomain: "contact-database-9c47b.firebaseapp.com",
+  databaseURL: "https://contact-database-9c47b-default-rtdb.firebaseio.com",
+  projectId: "contact-database-9c47b",
+  storageBucket: "contact-database-9c47b.appspot.com",
+  messagingSenderId: "118822537955",
+  appId: "1:118822537955:web:3ef795baeadbe37b7293d6",
+  measurementId: "G-0WY0798WFC"
+    };
 
-  const handleSubmit = () => {
-    // Handle submission logic here, e.g., calculate score, show results, etc.
-    console.log('Selected Answers:', selectedAnswers);
-    // Redirect to the result page or perform other actions based on the user's answers
+    firebase.initializeApp(firebaseConfig);
+
+    // Create a reference to the 'quizzes' node in the database
+    const database = firebase.database();
+    const quizzesRef = database.ref('quizzes');
+
+    // Push a new quiz (topic) to the 'quizzes' node
+    const newQuizRef = quizzesRef.push({
+      topicID,
+      title,
+      noq: parseInt(noq, 10), // Convert 'noq' to an integer
+    });
+
+    // Get the key of the newly added quiz
+    const newQuizKey = newQuizRef.key;
+
+    // Create a reference to the 'topics' node under the newly added quiz
+    const topicsRef = quizzesRef.child(newQuizKey).child('topics');
+
+    // Push a new topic to the 'topics' node
+    topicsRef.push({
+      topicID,
+      title,
+      noq: parseInt(noq, 10), // Convert 'noq' to an integer
+    });
+
+    // Clear form fields after submission
+    setTopicID('');
+    setTitle('');
+    setNoq('');
   };
 
   return (
-    <div className="exam-container">
-      <h1>Exam</h1>
-      {questions.map((question) => (
-        <div key={question.id} className="question-container">
-          <h3>{question.text}</h3>
-          <ul>
-            {question.options.map((option) => (
-              <li key={option.id}>
-                <label>
-                  <input
-                    type="radio"
-                    name={`question_${question.id}`}
-                    value={option.id}
-                    checked={selectedAnswers[question.id] === option.id}
-                    onChange={() => handleAnswerSelect(question.id, option.id)}
-                  />
-                  {option.text}
-                </label>
-              </li>
-            ))}
-          </ul>
-        </div>
-      ))}
-      <button onClick={handleSubmit}>Submit</button>
+    <div>
+      <h1>Create a Quiz</h1>
+      <form onSubmit={handleFormSubmit}>
+        <label>
+          Topic ID:
+          <input type="text" value={topicID} onChange={(e) => setTopicID(e.target.value)} />
+        </label>
+        <br />
+        <label>
+          Title:
+          <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} />
+        </label>
+        <br />
+        <label>
+          Number of Questions:
+          <input type="number" value={noq} onChange={(e) => setNoq(e.target.value)} />
+        </label>
+        <br />
+        <button type="submit">Create Quiz</button>
+      </form>
     </div>
   );
 };
