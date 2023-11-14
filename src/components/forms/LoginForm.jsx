@@ -37,6 +37,7 @@ function LoginForm() {
       <TextInput
         required
         icon="mail"
+        className="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600"
         placeholder="Enter Registered Email ID"
         type="email"
         value={email}
@@ -45,7 +46,7 @@ function LoginForm() {
       <div className="flex h-[52px] w-full items-center rounded-md border border-black/30 bg-white p-2 outline-none dark:border-white/30 dark:bg-black/50">
         <input
           required
-          className="ml-1 w-full rounded-lg border-none bg-transparent font-medium tracking-wide text-black outline-none dark:text-white lg:text-xl"
+          className="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600"
           placeholder="Enter Password"
           type={show ? 'text' : 'password'}
           value={password}
