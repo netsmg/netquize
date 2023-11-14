@@ -1,12 +1,10 @@
 {
   "topics": {
-    "1": {
-      "topicID": "CPP",
+    "CPP": {
       "title": "C++ is faster than J... No! It's the fastest",
       "noq": 10
     },
-    "2": {
-      "topicID": "JavaScript",
+    "JavaScript": {
       "title": "JavaScript is weird but you can not neglect it",
       "noq": 5
     }
