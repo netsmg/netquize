@@ -76,14 +76,14 @@ function Footer() {
       <div className="flex flex-col justify-center text-sm md:mr-10 md:flex-row md:items-center md:justify-between">
         <div className="text-center md:text-left">
           <span className="mb-1 block ">
-            Developed with;
+            Developed with 
             <Link
               className="cursor-pointer hover:underline"
               href="https://www.shibamsaha.dev"
               rel="noreferrer"
               target="_blank"
             >
-              SMG Inc.
+               SMG Inc.
             </Link>
           </span>
           <span>
