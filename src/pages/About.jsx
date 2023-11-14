@@ -24,7 +24,7 @@ const About = () => {
       <p>Get started today and enhance your learning experience with NetQuize!</p>
     
       </div>
-    <div>
+    </div>
       
        
   );
