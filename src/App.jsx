@@ -62,7 +62,7 @@ const blogData = [
     link: '/blog/2',
     details: 'In todays digital age, blogging has become a powerful medium for individuals, businesses, and creators to share their thoughts, ideas, and expertise with the world. One of the most popular platforms for creating a blog is Blogger, a user-friendly platform owned by Google. Whether you are a beginner looking to start a personal blog or an aspiring professional blogger aiming to reach a wider audience, this guide will take you through the step-by-step process of creating a blog in Blogger, from the basics to pro-level strategies.'
   },
-  id: 3,
+  {id: 3,
     imageUrl: 'https://codewithsadee.github.io/vast/assets/images/blog-2.jpg',
     date: 'June 10, 2022',
     comments: 5,
