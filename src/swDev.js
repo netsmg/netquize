@@ -1,15 +1,14 @@
 export const register = () => {
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", function () {
-      navigator.serviceWorker.register("/sw.js").then(
+      navigator.serviceWorker.register("./sw.js").then(
         function (registration) {
           // Registration was successful
           console.log(
             "ServiceWorker registration successful with scope: ",
             registration.scope
           )
-
-          // Caching all API Data
+// Caching all API Data
           let difficulties = ["easy", "medium", "hard"]
           let amounts = [5, 10, 15]
           let categories = [9, 11, 17, 18, 19, 21]
@@ -33,6 +32,7 @@ export const register = () => {
 
           //
         },
+          
         function (err) {
           // registration failed :(
           console.log("ServiceWorker registration failed: ", err)
