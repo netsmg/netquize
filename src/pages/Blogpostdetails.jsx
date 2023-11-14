@@ -21,7 +21,7 @@ const BlogPostDetails = ({ post }) => {
           </li>
         </ul>
 
-        <h1 className="h1 post-title">{post.title}</h1>
+        <h1 className="page-heading my-8 mt-10 text-center text-3xl font-bold uppercase text-black dark:text-white md:text-5xl">{post.title}</h1>
 
         {/* Your blog post content goes here */}
 
