@@ -49,7 +49,9 @@ const blogData = [
     date: 'May 22, 2022',
     comments: 2,
     title: 'Build A Full Web Chat App From Scratch',
-    link: '/blog/1', // This is the link to the detailed blog post page
+    link: '/blog/1', 
+    details: 'In todays digital age, blogging has become a powerful medium for individuals, businesses, and creators to share their thoughts, ideas, and expertise with the world. One of the most popular platforms for creating a blog is Blogger, a user-friendly platform owned by Google. Whether you are a beginner looking to start a personal blog or an aspiring professional blogger aiming to reach a wider audience, this guide will take you through the step-by-step process of creating a blog in Blogger, from the basics to pro-level strategies.'
+    // This is the link to the detailed blog post page
   },
   {
     id: 2,
@@ -58,7 +60,17 @@ const blogData = [
     comments: 5,
     title: 'Brush Strokes Energize Trees In Paintings',
     link: '/blog/2',
+    details: 'In todays digital age, blogging has become a powerful medium for individuals, businesses, and creators to share their thoughts, ideas, and expertise with the world. One of the most popular platforms for creating a blog is Blogger, a user-friendly platform owned by Google. Whether you are a beginner looking to start a personal blog or an aspiring professional blogger aiming to reach a wider audience, this guide will take you through the step-by-step process of creating a blog in Blogger, from the basics to pro-level strategies.'
   },
+  {id: 3,
+    imageUrl: 'https://codewithsadee.github.io/vast/assets/images/blog-2.jpg',
+    date: 'June 10, 2022',
+    comments: 5,
+    title: 'Brush Strokes Energize Trees In Paintings',
+    link: '/blog/3',
+    details: 'In todays digital age, blogging has become a powerful medium for individuals, businesses, and creators to share their thoughts, ideas, and expertise with the world. One of the most popular platforms for creating a blog is Blogger, a user-friendly platform owned by Google. Whether you are a beginner looking to start a personal blog or an aspiring professional blogger aiming to reach a wider audience, this guide will take you through the step-by-step process of creating a blog in Blogger, from the basics to pro-level strategies.'
+  },
+  
   // Add more blog entries as needed
 ];
 
