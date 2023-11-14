@@ -84,7 +84,7 @@ function Root() {
            
       
            <Route path="/" element={<PublicOutlet />}>
-          <Route index element={<SignUp />} />
+          <Route index element={<Home />} />
           <Route path="login" element={<Login />} />
           <Route path="blog" element={<Blog />} />
           {/* Dynamically generate routes for each blog post */}
