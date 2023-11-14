@@ -107,6 +107,9 @@ function Root() {
 
           
           <Route element={<PrivateOutlet />} path="/">
+            <Route element={<Home />} path="/">
+              <Route element={<Blog />} path="Blog ">
+            
             <Route element={<Quiz />} errorElement={<PageNotFound />} path="quiz/:id" />
             <Route element={<Video />} errorElement={<PageNotFound />} path="video/:id" />
             <Route element={<Profile />} path="profile" />
