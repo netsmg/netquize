@@ -1,8 +1,17 @@
+import { child, get, getDatabase, push, ref, update } from 'firebase/database';
+import _ from 'lodash';
+import { useCallback, useEffect, useMemo, useReducer, useState } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
 
+import { PageNotFound } from './';
+
+import { AnswerBox, ProgressBar, Rules } from '../components';
+import { useAuth } from '../contexts/AuthContext';
+import { useQuize } from '../hooks';
 
 function Exam() {
   const { id } = useParams();
-  const { loading, error, quiz } = useQuiz(id);
+  const { loading, error, quiz } = useQuize(id);
   const [qnaSet, dispatch] = useReducer(reducer, initialState);
   const { currentUser } = useAuth();
   const navigate = useNavigate();
