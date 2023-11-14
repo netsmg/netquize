@@ -237,23 +237,23 @@
           "title": "Which of the following is the address operator?",
           "options": [
             {
-              "title": "@ (At)"
+              "title": "(At)"
             },
             {
-              "title": "# (Hashtag)"
+              "title": "(Hashtag)"
             },
             {
-              "title": "& (And)",
+              "title": "(And)",
               "correct": true
             },
             {
-              "title": "% (Percentage)"
+              "title": "(Percentage)"
             },
             {
-              "title": "* (Asterisk)"
+              "title": "(Asterisk)"
             },
             {
-              "title": "! (Exclamation)"
+              "title": "(Exclamation)"
             }
           ]
         },
@@ -261,21 +261,21 @@
           "title": "Which of the following syntax is correct to create a comment in the C++ program?",
           "options": [
             {
-              "title": "// Comment",
+              "title": "Comment",
               "correct": true
             },
             {
-              "title": "/ Comment /"
+              "title": "Comment "
             },
             {
-              "title": "/* Comment */",
+              "title": " Comment ",
               "correct": true
             },
             {
-              "title": "# Comment"
+              "title": "Comment"
             },
             {
-              "title": "!(Comment)"
+              "title": "(Comment)"
             },
             {
               "title": "None of the above"
@@ -286,24 +286,24 @@
           "title": "For inserting a new line in C++ program, which one of the following statements can be used?",
           "options": [
             {
-              "title": "\\n",
+              "title": "n",
               "correct": true
             },
             {
-              "title": "\\nl"
+              "title": "nl"
             },
             {
-              "title": "\\r"
+              "title": "r"
             },
             {
               "title": "endl",
               "correct": true
             },
             {
-              "title": "!new-line"
+              "title": "new-line"
             },
             {
-              "title": "+new"
+              "title": "new"
             }
           ]
         },
@@ -311,21 +311,21 @@
           "title": "Which of the following is the correct syntax for declaring the array?",
           "options": [
             {
-              "title": "init array []"
+              "title": "init array"
             },
             {
-              "title": "int array [5];",
+              "title": "int array ",
               "correct": true
             },
             {
-              "title": "Array[5];"
+              "title": "Array"
             },
             {
-              "title": "char array[1];",
+              "title": "char array",
               "correct": true
             },
             {
-              "title": "bool arr[12];",
+              "title": "bool arr",
               "correct": true
             },
             {
@@ -393,19 +393,19 @@
               "correct": true
             },
             {
-              "title": "!(N != 13)",
+              "title": "d",
               "correct": true
             },
             {
-              "title": "(N&1)",
+              "title": "(N1)",
               "correct": true
             },
             {
-              "title": "(N%2 == 1)",
+              "title": "(N1)",
               "correct": true
             },
             {
-              "title": "(N%2 == 0)"
+              "title": "(N20)"
             }
           ]
         },
@@ -540,23 +540,23 @@
           "title": "Which of the following methods is used to access HTML elements using Javascript?",
           "options": [
             {
-              "title": "getElementById()",
+              "title": "getElementById",
               "correct": true
             },
             {
-              "title": "getElementByClassName()",
+              "title": "getElementByClassName",
               "correct": true
             },
             {
-              "title": "getElementsByTagName()",
+              "title": "getElementsByTagName",
               "correct": true
             },
             {
-              "title": "querySelectorAll()",
+              "title": "querySelectorAll",
               "correct": true
             },
             {
-              "title": "selectElement()"
+              "title": "selectElement"
             },
             {
               "title": "All of the above"
@@ -821,23 +821,23 @@
           "title": "Choose the correct HTML element for the largest heading:",
           "options": [
             {
-              "title": "<heading>"
+              "title": "heading"
             },
             {
-              "title": "<h1/>"
+              "title": "h1"
             },
             {
-              "title": "<h1>",
+              "title": "h1",
               "correct": true
             },
             {
-              "title": "<h6>"
+              "title": "h6"
             },
             {
-              "title": "<h>"
+              "title": "h"
             },
             {
-              "title": "<head>"
+              "title": "head"
             }
           ]
         },
