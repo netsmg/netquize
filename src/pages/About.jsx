@@ -11,9 +11,9 @@ const About = () => {
           Platform you have ever seen!
         </p>
         
-      <p className="rounded-lg shadow-xl px-4 py-2 text-center font-semibold uppercase tracking-wide text-black md:text-xl">Welcome to NetQuize, your go-to platform for creating and storing quizzes!</p>
-      <div className="rounded-lg shadow-xl px-4 py-2 text-center font-semibold uppercase tracking-wide text-black md:text-xl">
-      <p className="rounded-lg shadow-xl px-4 py-2 text-center font-semibold uppercase tracking-wide text-black md:text-xl">With NetQuize, you can:</p>
+      <p className="rounded-lg shadow-xl px-4 py-2 text-center font-semibold tracking-wide text-black md:text-xl">Welcome to NetQuize, your go-to platform for creating and storing quizzes!</p>
+      <div className="rounded-lg shadow-xl px-4 py-2 text-center font-semibold tracking-wide text-black">
+      <p className="rounded-lg shadow-xl px-4 py-2 text-center font-semibold tracking-wide text-black">With NetQuize, you can:</p>
       <ul>
         <li>Create custom quizzes tailored to your needs.</li>
         <li>Store and organize quizzes for easy access.</li>
