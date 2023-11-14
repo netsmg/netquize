@@ -67,6 +67,7 @@ const Blog = () => {
                       {blog.title}
                     </a>
                   </h3>
+                  <div className="hidden">{blog.details}</div>
 
                   <a href={blog.link} className="btn btn-outline">
                     Read More
