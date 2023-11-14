@@ -9,93 +9,56 @@
       "topicID": "JavaScript",
       "title": "JavaScript is weird but you can not neglect it",
       "noq": 5
-    },
-    "3": {
-      "topicID": "Tailwind-CSS",
-      "title": "Tailwind is nothing but CSS with a pinch of salt",
-      "noq": 4
-    },
-    "4": {
-      "topicID": "React-JS",
-      "title": "React makes it painless to create interactive UIs",
-      "noq": 5
-    },
-    "5": {
-      "topicID": "HTML",
-      "title": "HTML is the white skeleton of web pages",
-      "noq": 5
-    },
-    "6": {
-      "topicID": "Github",
-      "title": "Github remembers everything you do with it",
-      "noq": 5
-    },
-    "7": {
-      "topicID": "CPP-STL",
-      "title": "CPP STL is the Library to save lives along with time",
-      "noq": 5
-    },
-    "8": {
-      "topicID": "SQL",
-      "title": "SQL - No one else can manage data like it",
-      "noq": 5
-    },
-    "9": {
-      "topicID": "Python",
-      "title": "Python is the Self Reliant Maverick Giant",
-      "noq": 4
     }
   },
-  "quizzes": [
-    {
-      "title": "Dennis Ritchie"
-    },
-    {
-      "title": "Brian Kernighan"
-    },
-    {
-      "title": "Bjarne Stroustrup",
-      "correct": true
-    },
-    {
-      "title": "Guido van Rossum"
-    },
-    {
-      "title": "James Gosling"
-    },
-    {
-      "title": "Gennady Korotkevich"
-    }
-  ],
-  "questions": [
-    {
-      "title": "Which of the following is the correct identifier?",
-      "options": [
-        { "title": "$var_name" },
-        { "title": "VAR_123", "correct": true },
-        { "title": "varname@" },
-        { "title": "--var-name" },
-        { "title": "v_a_r_n_a_m_e", "correct": true },
-        { "title": "None of the above" }
+  "quizzes": {
+    "CPP": {
+      "questions": [
+        {
+          "title": "Who invented C++?",
+          "options": [
+            {
+              "title": "Dennis Ritchie"
+            },
+            {
+              "title": "Brian Kernighan"
+            },
+            {
+              "title": "Bjarne Stroustrup",
+              "correct": true
+            },
+            // ... other options
+          ]
+        },
+        // ... other questions for CPP quiz
       ]
     },
-    {
-      "title": "Which of the following is the address operator?",
-      "options": [
-        { "title": "@ (At)" },
-        { "title": "# (Hashtag)" },
-        { "title": "& (And)", "correct": true },
-        { "title": "% (Percentage)" },
-        { "title": "* (Asterisk)" },
-        { "title": "! (Exclamation)" }
-      ]
-    },
-    {
-      "title": "Which of the following syntax is correct to create a comment in the C++ program?",
-      "options": [
-        { "title": "// Comment", "correct": true },
-        { "title": "/ Comment /" }
+    "JavaScript": {
+      "questions": [
+        {
+          "title": "How to declare JavaScript variables?",
+          "options": [
+            {
+              "title": "with var",
+              "correct": true
+            },
+            // ... other options
+          ]
+        },
+        // ... other questions for JavaScript quiz
       ]
     }
+    // ... other quizzes
+  },
+  "videos": [
+    {
+      "title": "CPP A complete and modern course for beginners",
+      "link": "FpfHmAkRVK4"
+    },
+    {
+      "title": "C++ Basics in One Shot - Strivers A2Z DSA Course - L1",
+      "link": "EAR7De6Goz4"
+    }
+    // ... other videos
   ]
 }
