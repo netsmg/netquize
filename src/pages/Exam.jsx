@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import firebase from 'firebase/app';
+import 'firebase/auth';
 import 'firebase/database';
+
+// ... rest of your code
+
 
 const Exam = () => {
   const [topicID, setTopicID] = useState('');
