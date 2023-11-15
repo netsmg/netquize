@@ -2,7 +2,7 @@ import { useState, useEffect, useContext } from "react";
 
 import { Link, useLocation } from "react-router-dom";
 
-import { auth, db } from "../src/firebase";
+import { auth, db } from "./firebase";
 
 
 
