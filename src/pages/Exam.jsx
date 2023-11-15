@@ -187,7 +187,3 @@ export default function Chat({ user }) {
     </>
   );
 }
-
-
-
-export default Exam;
