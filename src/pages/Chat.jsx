@@ -12,7 +12,7 @@ import { IoIosArrowDown } from 'react-icons/io';
 import MessageBubble from '../components/MessageBubble';
 
 // firebase
-import { db } from '../utils/firebase';
+import { db } from './firebase.js';
 import {
   addDoc,
   collection,
