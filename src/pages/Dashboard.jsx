@@ -22,16 +22,11 @@ import "./Dashboard.css";
 
 export default function Dashboard() {
 
-  const isVisible = usePageVisibility();
+  
 
 
 
-  const { user } = useContext(AuthContext);
-
-
-
-  const history = useHistory();
-
+  
 
 
   const location = useLocation();
