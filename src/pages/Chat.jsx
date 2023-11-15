@@ -3,10 +3,7 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { nanoid } from 'nanoid';
 
-// icons
-import { FaRegPaperPlane } from 'react-icons/fa';
-import { RxCross2 } from 'react-icons/rx';
-import { IoIosArrowDown } from 'react-icons/io';
+
 
 // components
 import MessageBubble from '../components/MessageBubble';
