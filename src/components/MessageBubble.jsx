@@ -39,3 +39,4 @@ export default function MessageBubble({ message, user }) {
     </div>
   );
 }
+export default MessageBubble;
