@@ -9,7 +9,7 @@ import { nanoid } from 'nanoid';
 import MessageBubble from '../components/MessageBubble';
 
 // firebase
-import { db } from './firebase.js';
+
 import {
   addDoc,
   collection,
