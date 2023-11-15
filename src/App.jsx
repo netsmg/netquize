@@ -23,6 +23,7 @@ import {
   About,
   Blog,
   BlogPostDetails,
+  Chat,
   DetailedSubmission,
   Dashboard,
   Exam,
@@ -107,6 +108,7 @@ function Root() {
 
           
           <Route element={<PrivateOutlet />} path="/">
+            <Route element={<Chat />} path="chat"/>
             <Route element={<Quiz />} errorElement={<PageNotFound />} path="quiz/:id" />
             <Route element={<Video />} errorElement={<PageNotFound />} path="video/:id" />
             <Route element={<Profile />} path="profile" />
