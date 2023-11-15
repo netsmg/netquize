@@ -1,4 +1,4 @@
-import ReactMarkdown from 'react-markdown';
+
 import { nanoid } from 'nanoid';
 
 export default function MessageBubble({ message, user }) {
