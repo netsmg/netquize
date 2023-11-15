@@ -189,4 +189,4 @@ export default function Chat({ user }) {
     </>
   );
 }
-export default Chat;
+
