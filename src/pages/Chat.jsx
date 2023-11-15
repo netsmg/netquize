@@ -34,7 +34,7 @@ export default function Chat({ user }) {
   // navigate to '/welcome' page if user is not logged in
   useEffect(() => {
     if (!user) {
-      return navigate('/');
+      return navigate('/chat');
     }
   }, [user]);
 
@@ -186,5 +186,5 @@ export default function Chat({ user }) {
     </>
   );
 }
-export default Chat;
+
 
