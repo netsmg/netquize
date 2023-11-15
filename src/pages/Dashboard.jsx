@@ -10,7 +10,7 @@ import { signOut } from "firebase/auth";
 
 import { updateDoc, doc } from "firebase/firestore";
 
-import { AuthContext } from "./auth";
+
 
 import { collection, query, where, onSnapshot } from "firebase/firestore";
 
