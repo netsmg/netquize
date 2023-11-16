@@ -1,4 +1,4 @@
-## Quizzy - Quiz Application
+## NetQuize - Quiz Application
 
 <br/>
 
@@ -31,7 +31,7 @@
 
 **Live Link**
 
-- [Quizzy - Quiz Application](https://s4shibam-quizzy.netlify.app)
+- [NetQuize - Quiz Application](https://netquize.vercel.app)
 
 <br/>
 
