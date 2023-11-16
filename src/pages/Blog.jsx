@@ -20,6 +20,7 @@ const Blog = () => {
   ];
 
   return (
+    <div style="height:112px" aria-hidden="true" className="wp-block-spacer"></div>
     <div className="container mx-auto mx-auto mb-32 flex min-h-screen w-[90%] animate-reveal flex-col items-center wp-block-group container is-layout-flow wp-block-group-is-layout-flow">
       {blogData.map((blog) => (
         <div key={blog.id} className="mb-16">
