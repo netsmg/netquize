@@ -21,7 +21,7 @@ const Blog = () => {
   return (
     <div className="container mx-auto mx-auto mb-32 flex min-h-screen w-[90%] animate-reveal flex-col items-center wp-block-group container is-layout-flow wp-block-group-is-layout-flow">
       {blogData.map((blog) => (
-        <BlogPost key={blog.id} {...blog} />
+        <Blogpost key={blog.id} {...blog} />
       ))}
     </div>
   );
