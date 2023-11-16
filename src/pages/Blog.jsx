@@ -16,11 +16,39 @@ const Blog = () => {
       favoriteCount: 337,
       commentsCount: 42,
     },
+    {
+      id: 2,
+      title: "Lenovo’s smarter devices stoke professional passions",
+      categories: ["Garden", "Videos"],
+      author: {
+        name: "Lila",
+        avatar: "https://codewithsadee.github.io/vast/assets/images/blog-1.jpg",
+      },
+      date: "Sep 18, 2021",
+      readingTime: 3,
+      image: "https://codewithsadee.github.io/vast/assets/images/blog-1.jpg",
+      favoriteCount: 337,
+      commentsCount: 42,
+    },
+    {
+      id: 3,
+      title: "Lenovo’s smarter devices stoke professional passions",
+      categories: ["Garden", "Videos"],
+      author: {
+        name: "Lila",
+        avatar: "https://codewithsadee.github.io/vast/assets/images/blog-1.jpg",
+      },
+      date: "Sep 18, 2021",
+      readingTime: 3,
+      image: "https://codewithsadee.github.io/vast/assets/images/blog-1.jpg",
+      favoriteCount: 337,
+      commentsCount: 42,
+    },
     // Add more blog entries as needed
   ];
 
   return (
-    <div style="height:112px" aria-hidden="true" className="wp-block-spacer"></div>
+    
     <div className="container mx-auto mx-auto mb-32 flex min-h-screen w-[90%] animate-reveal flex-col items-center wp-block-group container is-layout-flow wp-block-group-is-layout-flow">
       {blogData.map((blog) => (
         <div key={blog.id} className="mb-16">
