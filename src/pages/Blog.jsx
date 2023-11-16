@@ -1,5 +1,6 @@
 import React from 'react';
-import Blogpost from './Blogpost'; // Make sure to provide the correct path
+import Blogpost from './Blogpost';
+import { Link } from 'react-router-dom'; 
 
 const Blog = () => {
   const blogData = [
@@ -17,14 +18,8 @@ const Blog = () => {
     },
    
   ];
+return ( <div className="container mx-auto mx-auto mb-32 flex min-h-screen w-[90%] animate-reveal flex-col items-center wp-block-group container is-layout-flow wp-block-group-is-layout-flow"> {blogData.map((blog) => ( <Link key={blog.id} to={`blog/${blog.id}`} className="text-black dark:text-white"> <Blogpost {...blog} /> </Link> ))} </div>
 
-  return (
-    <div className="container mx-auto mx-auto mb-32 flex min-h-screen w-[90%] animate-reveal flex-col items-center wp-block-group container is-layout-flow wp-block-group-is-layout-flow">
-      {blogData.map((blog) => (
-        <Blogpost key={blog.id} {...blog} />
-      ))}
-    </div>
-  );
-};
-
+ ); };
+  
 export default Blog;
