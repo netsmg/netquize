@@ -1,3 +1,8 @@
+import React from 'react';
+
+const Dashboard = () => {
+  return (
+
 <title>NetQuize Blog – News Magazine Blog theme</title>
 <meta name="robots" content="max-image-preview:large" />
 <link rel="dns-prefetch" href="//maxst.icons8.com" />
@@ -732,7 +737,11 @@ var favorites_data = {"ajaxurl":"https:\/\/netquize.vercel.app\/wp-admin\/admin-
     </div>
 </div>
                         
-        
+
+		);
+
+		};
+		
         
 
-export default dashboard;
+export default Dashboard;
