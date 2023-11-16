@@ -1,5 +1,5 @@
 import React from 'react';
-import BlogPost from './BlogPost'; // Make sure to provide the correct path
+import Blogpost from './Blogpost'; // Make sure to provide the correct path
 
 const Blog = () => {
   const blogData = [
