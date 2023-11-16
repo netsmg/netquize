@@ -26,7 +26,7 @@ const BlogPostDetails = ({ post }) => {
 
         {/* Your blog post content goes here */}
 
-        <a href={post.link} className="btn btn-outline">
+        <a href="/blog" className="btn btn-outline"><i className="fab fa-back"></i>
           Back to Blog
         </a>
       </div>
