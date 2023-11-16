@@ -18,7 +18,7 @@ const Blog = () => {
     },
    
   ];
-return ( <div className="container mx-auto mx-auto mb-32 flex min-h-screen w-[90%] animate-reveal flex-col items-center wp-block-group container is-layout-flow wp-block-group-is-layout-flow"> {blogData.map((blog) => ( <Link key={blog.id} to={`/${blog.id}`} className="text-black dark:text-white"> <Blogpost {...blog} /> </Link> ))} </div>
+return ( <div className="container mx-auto mx-auto mb-32 flex min-h-screen w-[90%] animate-reveal flex-col items-center wp-block-group container is-layout-flow wp-block-group-is-layout-flow"> {blogData.map((blog) => ( <Link key={blog.id} to={`https://netquize.vercel.app/blog/${blog.id}`} className="text-black dark:text-white"> <Blogpost {...blog} /> </Link> ))} </div>
 
  ); };
   
