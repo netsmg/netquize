@@ -1,37 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import { getDatabase, ref, get } from 'firebase/database';
+import React from 'react';
 
-// Assuming `app` is already initialized
-
-const Quiz = () => {
-  const [quizData, setQuizData] = useState(null);
-
-  useEffect(() => {
-    fetchQuizData();
-  }, []);
-
-  const fetchQuizData = async () => {
-    const database = getDatabase(app);
-    const quizRef = ref(database, 'quizzes/quiz1'); // Adjust path accordingly
-
-    try {
-      const snapshot = await get(quizRef);
-      const fetchedQuizData = snapshot.val();
-      setQuizData(fetchedQuizData);
-    } catch (error) {
-      console.error('Error fetching quiz data:', error.message);
-      // Handle error appropriately
-    }
-  };
-
+const Exam = () => {
   return (
-    <div>
-      {quizData ? (
-        // Render quiz components with quizData
-        <div>Quiz Questions Go Here</div>
-      ) : (
-        <div>Loading...</div>
-      )}
+    <div className="flex items-center justify-center h-screen bg-blue-500">
+      <div className="text-white text-center">
+        <h1 className="text-4xl font-bold mb-4">Welcome to NetSmg</h1>
+        <p className="text-lg">Start your journey here!</p>
+      </div>
     </div>
   );
 };
