@@ -13,6 +13,8 @@ const Blog = () => {
       date: "Sep 18, 2021",
       readingTime: 3,
       image: "https://codewithsadee.github.io/vast/assets/images/blog-1.jpg",
+      favoriteCount: 337,
+      commentsCount: 42,
     },
     // Add more blog entries as needed
   ];
@@ -41,7 +43,7 @@ const Blog = () => {
                             <a
                               key={index}
                               href={`https://netquize.vercel.app/category/${category.toLowerCase()}/`}
-                              className="transition-colors hover:text-white duration-300 nc-Badge inline-flex px-2.5 py-1 rounded-full font-medium text-xs relative my-1 text-[10px] sm:text-xs  text-green-800 bg-green-100 hover:bg-green-800"
+                              className="transition-colors hover:text-white duration-300 nc-Badge inline-flex px-2.5 py-1 rounded-full font-medium text-xs relative my-1 text-[10px] sm:text-xs text-green-800 bg-green-100 hover:bg-green-800"
                             >
                               {category}
                             </a>
@@ -74,71 +76,47 @@ const Blog = () => {
                       <div className="flex items-center justify-between mt-auto">
                         <div className="nc-PostCardLikeAndComment flex items-center space-x-2" data-nc-id="PostCardLikeAndComment">
                           <div className="NetQuize-button-like-post relative">
-                            <button className="simplefavorite-button has-count" data-postid="95" data-siteid="1" data-groupid="1" data-favoritecount="337" style="">
+                            <button className="simplefavorite-button has-count" data-postid="95" data-siteid="1" data-groupid="1" data-favoritecount="337">
                               <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
                                 <path fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M11.995 7.23319C10.5455 5.60999 8.12832 5.17335 6.31215 6.65972C4.49599 8.14609 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13046 17.6779 6.65972C15.8305 5.18899 13.4446 5.60999 11.995 7.23319Z" clip-rule="evenodd"></path>
                               </svg>
-                              <span className="simplefavorite-button-count" style="">
-                                {blog.favoriteCount}
-                              </span>
+                              <span className="simplefavorite-button-count">{blog.favoriteCount}</span>
                             </button>
                           </div>
-                          <a href={`https://netquize.vercel.app/${blog.title.split(' ').join('-').toLowerCase()}/#comments`} className="nc-PostCardCommentBtn relative items-center min-w-[68px] rounded-full text-neutral-6000 bg-neutral-50 transition-colors dark:text-neutral-200 dark:bg-neutral-800                              hover:bg-teal-50 dark:hover:bg-teal-100 hover:text-teal-600 dark:hover:text-teal-500 hidden sm:flex px-3 h-8 text-xs focus:outline-none" title="Comments" data-nc-id="PostCardCommentBtn">
-                              <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.75 6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H17.25C18.3546 4.75 19.25 5.64543 19.25 6.75V14.25C19.25 15.3546 18.3546 16.25 17.25 16.25H14.625L12 19.25L9.375 16.25H6.75C5.64543 16.25 4.75 15.3546 4.75 14.25V6.75Z"></path>
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M9.5 11C9.5 11.2761 9.27614 11.5 9 11.5C8.72386 11.5 8.5 11.2761 8.5 11C8.5 10.7239 8.72386 10.5 9 10.5C9.27614 10.5 9.5 10.7239 9.5 11Z"></path>
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M12.5 11C12.5 11.2761 12.2761 11.5 12 11.5C11.7239 11.5 11.5 11.2761 11.5 11C11.5 10.7239 11.7239 10.5 12 10.5C12.2761 10.5 12.5 10.7239 12.5 11Z"></path>
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M15.5 11C15.5 11.2761 15.2761 11.5 15 11.5C14.7239 11.5 14.5 11.2761 14.5 11C14.5 10.7239 14.7239 10.5 15 10.5C15.2761 10.5 15.5 10.7239 15.5 11Z"></path>
-                              </svg>
-                              <span className="ml-1 text-neutral-900 dark:text-neutral-200">{blog.commentsCount}</span>
-                            </a>
-                          </div>
-                          <div className="relative inline-block text-left" data-headlessui-state="">
-                            <button
-                              className="nc-PostCardDropdownShare relative rounded-full flex items-center justify-center focus:outline-none bg-neutral-50 hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-700 dark:text-neutral-100 dark:bg-neutral-800 dark:hover:bg-blue-100 transition-colors duration-300 h-7 w-7 sm:h-8 sm:w-8"
-                              title="Share with"
-                              id={`headlessui-menu-button-${blog.id}`}
-                              type="button"
-                              aria-haspopup="menu"
-                              aria-expanded="false"
-                              data-headlessui-state=""
-                            >
-                              <div>
-                                <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                  <path
-                                    stroke="currentColor"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="1"
-                                    d="M4.75 14.75V16.25C4.75 17.9069 6.09315 19.25 7.75 19.25H16.25C17.9069 19.25 19.25 17.9069 19.25 16.25V14.75"
-                                  ></path>
-                                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 14.25L12 5"></path>
-                                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M8.75 8.25L12 4.75L15.25 8.25"></path>
-                                </svg>
-                                <input type="text" hidden="" className="hidden" value={`https://netquize.vercel.app/${blog.title.split(' ').join('-').toLowerCase()}/`} />
-                              </div>
-                            </button>
-                          </div>
+                          <a href={`https://netquize.vercel.app/${blog.title.split(' ').join('-').toLowerCase()}/#comments`} className="nc-PostCardCommentBtn relative items-center min-w-[68px] rounded-full text-neutral-6000 bg-neutral-50 transition-colors dark:text-neutral-200 dark:bg-neutral-800 hover:bg-teal-50 dark:hover:bg-teal-100 hover:text-teal-600 dark:hover:text-teal-500 hidden sm:flex px-3 h-8 text-xs focus:outline-none" title="Comments" data-nc-id="PostCardCommentBtn">
+                            <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.75 6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H17.25C18.3546 4.75 19.25 5.64543 19.25 6.75V14.25C19.25 15.3546 18.3546 16.25 17.25 16.25H14.625L12 19.25L9.375 16.25H6.75C5.64543 16.25 4.75 15.3546 4.75 14.25V6.75Z"></path>
+                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M9.5 11C9.5 11.2761 9.27614 11.5 9 11.5C8.72386 11.5 8.5 11.2761 8.5 11C8.5 10.7239 8.72386 10.5 9 10.5C9.27614 10.5 9.5 10.7239 9.5 11Z"></path>
+                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M12.5 11C12.5 11.2761 12.2761 11.5 12 11.5C11.7239 11.5 11.5 11.2761 11.5 11C11.5 10.7239 11.7239 10.5 12 10.5C12.2761 10.5 12.5 10.7239 12.5 11Z"></path>
+                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M15.5 11C15.5 11.2761 15.2761 11.5 15 11.5C14.7239 11.5 14.5 11.2761 14.5 11C14.5 10.7239 14.7239 10.5 15 10.5C15.2761 10.5 15.5 10.7239 15.5 11Z"></path>
+                            </svg>
+                            <span className="ml-1 text-neutral-900 dark:text-neutral-200">{blog.commentsCount}</span>
+                          </a>
                         </div>
-                        <div className="p-4 sm:pt-8 sm:px-10">
-                          <div className="nc-NextPrev flex items-center text-neutral-900 dark:text-neutral-300 space-x-2 relative" data-nc-id="NextPrev" data-glide-el="controls">
-                                                       <button
-                                className="w-11 h-11 text-xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-6000 dark:hover:border-neutral-500 rounded-full flex items-center justify-center hover:border-neutral-300 disabled:opacity-60 disabled:cursor-not-allowed focus:outline-none"
-                                title="Prev"
-                                data-glide-dir="<"
-                                disabled
-                              >
-                                <i className="las la-angle-left"></i>
-                              </button>
-                              <button
-                                className="w-11 h-11 text-xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-6000 dark:hover:border-neutral-500 rounded-full flex items-center justify-center hover:border-neutral-300 disabled:opacity-60 disabled:cursor-not-allowed focus:outline-none"
-                                title="Next"
-                                data-glide-dir=">"
-                              >
-                                <i className="las la-angle-right"></i>
-                              </button>
+                        <div className="relative inline-block text-left">
+                          <button
+                            className="nc-PostCardDropdownShare relative rounded-full flex items-center justify-center focus:outline-none bg-neutral-50 hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-700 dark:text-neutral-100 dark:bg-neutral-800 dark:hover:bg-blue-100 transition-colors duration-300 h-7 w-7 sm:h-8 sm:w-8"
+                            title="Share with"
+                            id={`headlessui-menu-button-${blog.id}`}
+                            type="button"
+                            aria-haspopup="menu"
+                            aria-expanded="false"
+                          >
+                            <div>
+                              <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="1"
+                                  d="M4.75 14.75V16.25C4.75 17.9069 6.09315 19.25 7.75 19.25H16.25C17.9069 19.25 19.25 17.9069 19.25 16.25V14.75"
+                                ></path>
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 14.25L12 5"></path>
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M8.75 8.25L12 4.75L15.25 8.25"></path>
+                              </svg>
+                              <input type="text" hidden="" className="hidden" value={`https://netquize.vercel.app/${blog.title.split(' ').join('-').toLowerCase()}/`} />
                             </div>
-                          </div>
+                          </button>
                         </div>
                       </div>
                     </div>
@@ -148,7 +126,6 @@ const Blog = () => {
               </div>
             </div>
           </div>
-      </div>
         </div>
       ))}
     </div>
@@ -156,5 +133,3 @@ const Blog = () => {
 };
 
 export default Blog;
-  
-
