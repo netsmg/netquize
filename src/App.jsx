@@ -104,7 +104,7 @@ function Root() {
           <Route path="blog" element={<Blog />} />
           {/* Dynamically generate routes for each blog post */}
           {blogData.map((post) => (
-            <Route key={post.id} path={`blog/${post.id}`} element={<BlogPostDetails post={post} />} />
+            <Route key={post.id} path={`blog/${post.title}`} element={<BlogPostDetails post={post} />} />
           ))}
         </Route>
 
