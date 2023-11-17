@@ -30,6 +30,7 @@ import {
   Home,
   Learn,
   Login,
+  Notification,
   PageNotFound,
   Profile,
   Quiz,
@@ -99,6 +100,7 @@ function Root() {
            <Route path="/" element={<PublicOutlet />}>
           <Route index element={<Home />} />
           <Route path="login" element={<Login />} />
+             <Route path="notification" element={<Notification />}
           <Route path="blog" element={<Blog />} />
           {/* Dynamically generate routes for each blog post */}
           {blogData.map((post) => (
