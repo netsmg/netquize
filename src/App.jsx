@@ -100,7 +100,7 @@ function Root() {
            <Route path="/" element={<PublicOutlet />}>
           <Route index element={<Home />} />
           <Route path="login" element={<Login />} />
-             <Route path="notification" element={<Notification />}
+             
           <Route path="blog" element={<Blog />} />
           {/* Dynamically generate routes for each blog post */}
           {blogData.map((post) => (
@@ -111,6 +111,7 @@ function Root() {
           
           <Route element={<PrivateOutlet />} path="/">
             <Route element={<Chat />} path="chat"/>
+            <Route path="notification" element={<Notification />}
             <Route element={<Quiz />} errorElement={<PageNotFound />} path="quiz/:id" />
             <Route element={<Video />} errorElement={<PageNotFound />} path="video/:id" />
             <Route element={<Profile />} path="profile" />
