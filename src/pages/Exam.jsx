@@ -39,22 +39,22 @@ const Exam = () => {
         <ul className="options">
           <li>
             <input type="radio" id="option5" name="q2" value="option5" />
-            <label for="option5">function function_name() { ... }</label>
+            <label for="option5">function function_name</label>
           </li>
 
           <li>
             <input type="radio" id="option6" name="q2" value="option6" />
-            <label for="option6">var function_name = function() { ... };</label>
+            <label for="option6">var function_name = function</label>
           </li>
 
           <li>
             <input type="radio" id="option7" name="q2" value="option7" />
-            <label for="option7">let function_name = () => { ... };</label>
+            <label for="option7">let function_name</label>
           </li>
 
           <li>
             <input type="radio" id="option8" name="q2" value="option8" />
-            <label for="option8">const function_name = function() { ... };</label>
+            <label for="option8">const function_name</label>
           </li>
         </ul>
       </div>
