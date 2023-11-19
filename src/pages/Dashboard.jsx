@@ -15,7 +15,7 @@ import {
 } from "@material-ui/core";
 import AddCircleOutlineIcon from "@material-ui/icons/AddCircleOutline";
 import IconButton from "@material-ui/core/IconButton";
-import { getQuizByCategory } from "../../utils/db";
+import { QuizCategorySelect } from "../../utils/db";
 import Form from "../../components/Form/Form";
 
 const useStyles = makeStyles({
