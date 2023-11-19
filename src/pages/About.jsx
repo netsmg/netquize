@@ -1,6 +1,6 @@
 
 import React from "react";
-
+import Heading from "./Heading";
 
 const data = [
   {
@@ -32,9 +32,9 @@ const About = () => {
       <div className="w-full max-w-6xl mx-auto">
         <div className="flex flex-col items-center lg:flex-row">
           <div className="flex flex-col items-start justify-center w-full h-full sm:pr-8 mb-10 lg:mb-0 lg:w-1/2">
-            <div className="text-lg>
+            <Heading sub=" Our customers love our product">
               Testimonials
-            </div>
+            </Heading>
 
             <p className="my-6 text-lg text-gray-400">
               Don't just take our word for it, read from our extensive <br />{" "}
