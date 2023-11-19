@@ -1,6 +1,6 @@
 
 import React from "react";
-import Heading from "./Heading";
+
 
 const data = [
   {
@@ -32,9 +32,7 @@ const About = () => {
       <div className="w-full max-w-6xl mx-auto">
         <div className="flex flex-col items-center lg:flex-row">
           <div className="flex flex-col items-start justify-center w-full h-full sm:pr-8 mb-10 lg:mb-0 lg:w-1/2">
-            <Heading sub=" Our customers love our product">
-              Testimonials
-            </Heading>
+            
 
             <p className="my-6 text-lg text-gray-400">
               Don't just take our word for it, read from our extensive <br />{" "}
@@ -42,7 +40,7 @@ const About = () => {
             </p>
 
             <a
-              href={CONSTANTS.purchaseUrl}
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-6 py-3 text-base font-medium leading-none text-white transition duration-150 ease-in-out bg-blue-700 border border-transparent shadow hover:bg-blue-600 focus:outline-none focus:border-blue-800 md:py-4 md:text-lg md:px-10 rounded-full"
