@@ -2,7 +2,7 @@ import { Dialog, DialogTitle, DialogContent, DialogActions, TextField, MenuItem,
 import { Fragment, useState, useEffect } from "react"
 import { useAuth } from '../../hook/useAuth'
 import { addPost, addQuiz } from "../../utils/db";
-import correctAnswer from '../../utils/correct_answer'
+import CorrectAnswerRadioButtons from '../../utils/correct_answer'
 import categoryQuiz from '../../utils/category_quiz'
 import { useParams } from "react-router-dom"
 
