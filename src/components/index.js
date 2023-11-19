@@ -1,13 +1,10 @@
 export { default as CheckBox } from './elements/CheckBox';
 export { default as Form } from './elements/Form';
-export { default as Heading } from './elements/Heading';
 export { default as NavButton } from './elements/NavButton';
 export { default as TextInput } from './elements/TextInput';
-
 export { default as LoginForm } from './forms/LoginForm';
 export { default as ResetPasswordForm } from './forms/ResetPasswordForm';
 export { default as SignUpForm } from './forms/SignUpForm';
-
 export { default as PrivateOutlet } from './react-router/PrivateOutlet';
 export { default as PublicOutlet } from './react-router/PublicOutlet';
 
