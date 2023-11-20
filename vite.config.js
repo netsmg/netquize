@@ -1,4 +1,5 @@
-import React from 'react';
+import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite'; 
 import { createPWA } from 'vite-plugin-pwa';
 import { VitePWAOptions } from 'vite-plugin-pwa/dist/types';
 
