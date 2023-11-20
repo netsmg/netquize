@@ -45,7 +45,7 @@
     "prettier-plugin-tailwindcss": "^0.5.3",
     "tailwindcss": "^3.2.6",
     "vite": "^4.1.0",
-    "vite-plugin-pwa": "^1.17.0"  // Add this line for the PWA plugin
+    "vite-plugin-pwa": "^1.17.0"  
   }
   }
 }
