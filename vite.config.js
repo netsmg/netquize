@@ -1,22 +1,28 @@
-import react from '@vitejs/plugin-react';
-import { defineConfig } from 'vite';
+import React from 'react';
+import { createPWA } from 'vite-plugin-pwa';
+import { VitePWAOptions } from 'vite-plugin-pwa/dist/types';
 
-// https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [react()],
-  server: {
-    host: true,
-    // Use a middleware to set MIME type for service worker
-    middlewares: [
-      (req, res, next) => {
-        if (req.url === '/service-worker.js') {
-          res.setHeader('Content-Type', 'application/javascript');
-        }
-        next();
-      },
-    ],
-  },
-  build: {
-    chunkSizeWarningLimit: 1500,
-  },
+
+const pwaPlugin = createPWA({
+  config: require('./pwa.config.js'),
 });
+
+export default {
+  // Other Vite config options...
+  plugins: [pwaPlugin, reactPlugin()],
+};
+
+function reactPlugin(): VitePWAOptions['jsxInject'] {
+  return `
+    import React from 'react';
+    import ReactDOM from 'react-dom';
+    import App from './App'; // Replace with your React component file
+
+    ReactDOM.render(
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>,
+      document.getElementById('root')
+    );
+  `;
+}
