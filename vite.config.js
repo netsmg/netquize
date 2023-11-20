@@ -9,7 +9,7 @@ const pwaPlugin: VitePWAOptions = {
     
     name: 'NetQuize',
     short_name: 'NetQuize',
-    description: 'NetQuize ',
+    description: 'Your description here',
     start_url: '/',
     display: 'standalone',
     background_color: '#ffffff',
@@ -31,10 +31,10 @@ const pwaPlugin: VitePWAOptions = {
 };
 
 export default defineConfig({
- 
+  // ... other Vite config options
   plugins: [
     reactPlugin(),
-    VitePWA(pwaPlugin),
+    VitePWA(pwaPlugin), 
   ],
 });
 
