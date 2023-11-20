@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
 import React from 'react';
-import { VitePWAOptions, VitePWA } from 'vite-plugin-pwa';
+import { VitePWAOptions } from 'vite-plugin-pwa';
 
 // ... other imports
 
@@ -34,11 +34,11 @@ export default defineConfig({
   // ... other Vite config options
   plugins: [
     reactPlugin(),
-    VitePWA(pwaPlugin) // Include the PWA plugin with your configuration
+    VitePWA(pwaPlugin), // Use VitePWA as a plugin by calling it directly
   ],
 });
 
-function reactPlugin(): VitePWAOptions['jsxInject'] {
+function reactPlugin() {
   return `
     import React from 'react';
     import ReactDOM from 'react-dom';
