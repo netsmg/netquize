@@ -1,4 +1,4 @@
-export { default as useAuth } from './useAuth';
+
 export { default as useData } from './useData';
 export { default as usePopularQuizzes } from './usePopularQuizzes';
 export { default as useQuiz } from './useQuiz';
