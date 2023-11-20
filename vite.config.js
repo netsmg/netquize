@@ -1,28 +1,20 @@
+
+
 import react from '@vitejs/plugin-react';
-import VitePWA from 'vite-plugin-pwa';
-import { defineConfig } from 'vite';
+import { createPWA } from 'vite-plugin-pwa';
 
+const reactPlugin = react();
 
-export default defineConfig({
-  plugins: [
-    react(),
-    VitePWA({
-      manifest: {
-        name: 'NetQuize',
-        short_name: 'NetQuize',
-        description: 'NetQuize',
-        theme_color: '#ffffff',
-        background_color: '#ffffff',
-      },
-      workbox: {
-        
-      },
-    }),
-  ],
+const pwaPlugin = createPWA({
+  config: require('./pwa.config.js'),
+});
+
+export default {
+  plugins: [reactPlugin, pwaPlugin],
   server: {
     host: true,
   },
   build: {
     chunkSizeWarningLimit: 1500,
   },
-});
+};
