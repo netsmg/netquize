@@ -1,12 +1,19 @@
-
-
 import react from '@vitejs/plugin-react';
-import { createPWA } from 'vite-plugin-pwa';
+import VitePWA from 'vite-plugin-pwa';
 
 const reactPlugin = react();
 
-const pwaPlugin = createPWA({
-  config: require('./pwa.config.js'),
+const pwaPlugin = VitePWA({
+  manifest: {
+    name: 'NetQuize',
+    short_name: 'NetQuize',
+    description: 'NetQuize',
+    theme_color: '#ffffff',
+    background_color: '#ffffff',
+  },
+  workbox: {
+    
+  },
 });
 
 export default {
