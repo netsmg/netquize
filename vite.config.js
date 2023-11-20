@@ -1,17 +1,42 @@
-import react from '@vitejs/plugin-react';
-import { defineConfig } from 'vite'; 
-import { createPWA } from 'vite-plugin-pwa';
-import { VitePWAOptions } from 'vite-plugin-pwa/dist/types';
+import { defineConfig } from 'vite';
+import React from 'react';
+import { VitePWAOptions, VitePWA } from 'vite-plugin-pwa';
 
+// ... other imports
 
-const pwaPlugin = createPWA({
-  config: require('./pwa.config.js'),
-});
-
-export default {
-  // Other Vite config options...
-  plugins: [pwaPlugin, reactPlugin()],
+const pwaPlugin: VitePWAOptions = {
+  manifest: {
+    // Customize your PWA manifest options
+    name: 'NetQuize',
+    short_name: 'NetQuize',
+    description: 'Your description here',
+    start_url: '/',
+    display: 'standalone',
+    background_color: '#ffffff',
+    theme_color: '#000000',
+    icons: [
+      // Customize your PWA icons
+      {
+        src: '/path/to/icon.png',
+        sizes: '192x192',
+        type: 'image/png',
+      },
+      {
+        src: '/path/to/icon-512.png',
+        sizes: '512x512',
+        type: 'image/png',
+      },
+    ],
+  },
 };
+
+export default defineConfig({
+  // ... other Vite config options
+  plugins: [
+    reactPlugin(),
+    VitePWA(pwaPlugin) // Include the PWA plugin with your configuration
+  ],
+});
 
 function reactPlugin(): VitePWAOptions['jsxInject'] {
   return `
