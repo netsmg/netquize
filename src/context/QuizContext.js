@@ -1228,9 +1228,7 @@ function Provider({ children }) {
   };
 
   return (
-    <QuizContext.Provider value={sharedValuesAndMethods}>
-      {children}
-    </QuizContext.Provider>
+    <p>Welcome</p>
   );
 }
 
