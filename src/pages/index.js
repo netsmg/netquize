@@ -13,6 +13,7 @@ export { default as Notification } from './Notification';
 export { default as PageNotFound } from './PageNotFound';
 export { default as Profile } from './Profile';
 export { default as Quiz } from './Quiz';
+export { default as Quize } from './Quize';
 export { default as Quizzes } from './Quizzes';
 export { default as Reset } from './Reset';
 export { default as Result } from './Result';
