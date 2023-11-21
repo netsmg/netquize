@@ -34,6 +34,7 @@ import {
   PageNotFound,
   Profile,
   Quiz,
+  Quize,
   Quizzes,
   Reset,
   Result,
@@ -115,6 +116,9 @@ function Root() {
 
         
             <Route element={<Quiz />} errorElement={<PageNotFound />} path="quiz/:id" />
+            <Route element={<Quize />} errorElement={<PageNotFound />} path="quize/:id" />
+            
+            
             <Route element={<Video />} errorElement={<PageNotFound />} path="video/:id" />
             <Route element={<Profile />} path="profile" />
             <Route element={<Submissions />} path="submissions" />
