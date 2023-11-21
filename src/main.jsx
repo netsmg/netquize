@@ -5,7 +5,7 @@ import "./assets/css/home.css";
 import "./assets/css/quiz.css";
 
 import { BrowserRouter } from "react-router-dom";
-import { Provider } from "./context/QuizContext";
+
 
 
 import App from './App';
