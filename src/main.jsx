@@ -21,6 +21,6 @@ ReactDOM.render(
 
 serviceWorker.register();
 
-
+createRoot(document.getElementById('root')).render(<App />);
 
 
