@@ -38,7 +38,7 @@ function SignInWithGoogleButton({ title }) {
         <img
           alt=""
           className="mr-4 h-8 w-8"
-          src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
+          src="https://netquize.vercel.app/media/icons8-google-128.svg"
         />
         {title}
       </button>
