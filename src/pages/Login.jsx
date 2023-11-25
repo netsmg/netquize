@@ -7,7 +7,7 @@ function Login() {
       <div className="w-full">
         <LoginForm />
       </div>
-      <div className="w-full max-w-xl">
+      <div className="w-full max-w-xl items-center">
         <SignInWithGoogleButton title="Log In" />
       </div>
     </div>
