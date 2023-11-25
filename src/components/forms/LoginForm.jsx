@@ -33,22 +33,10 @@ function LoginForm() {
   }
 
   return (
-  <section class="bg-gray-50 dark:bg-gray-900">
-  <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-      <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
-          <img class="w-8 h-8 mr-2" src="https://firebasestorage.googleapis.com/v0/b/contact-database-9c47b.appspot.com/o/Logo-270c8115.svg?alt=media&token=e18ab0e7-0abc-4f39-bb96-26f793edea2a" alt="logo"/>
-          NetQuize   
-      </a>
-       <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
-          <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
-              <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
-                  Login to your account
-              </h1>
-    <Form className="w-full" onSubmit={handleSubmit}>
+    <Form className="gap-4 py-0 block border-spin max-w-sm p-6 bg-white border border-blue-800 rounded-lg shadow hover:bg-blue-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700" onSubmit={handleSubmit}>
       <TextInput
         required
         icon="mail"
-        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
         placeholder="Enter Registered Email ID"
         type="email"
         value={email}
@@ -57,7 +45,7 @@ function LoginForm() {
       <div className="flex h-[52px] w-full items-center rounded-md border border-black/30 bg-white p-2 outline-none dark:border-white/30 dark:bg-black/50">
         <input
           required
-          className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          className="ml-1 w-full rounded-lg border-none bg-transparent font-medium tracking-wide text-black outline-none dark:text-white lg:text-xl"
           placeholder="Enter Password"
           type={show ? 'text' : 'password'}
           value={password}
@@ -74,7 +62,7 @@ function LoginForm() {
         </button>
       </div>
 
-      <div className="ml-auto text-sm font-light text-gray-500 dark:text-gray-400">
+      <div className="ml-auto">
         <Link
           className="link-text justify-self-end text-base font-medium tracking-wide"
           to="/reset"
@@ -87,7 +75,7 @@ function LoginForm() {
         Log In
       </button>
 
-      <div className="text-sm font-light text-gray-500 dark:text-gray-400">
+      <div className="text-center text-sm font-medium tracking-wide text-black dark:text-slate-300 md:text-base">
         Don&apos;t have an account?{' '}
         <span className="inline-block">
           <Link to="/signup">
@@ -97,10 +85,6 @@ function LoginForm() {
         </span>
       </div>
     </Form>
-    </div>
-    </div>
-    </div>
-    </section>
   );
 }
 
