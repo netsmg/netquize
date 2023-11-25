@@ -44,7 +44,7 @@ function LoginForm() {
               <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
                   Login to your account
               </h1>
-    <Form className="space-y-4 md:space-y-6" onSubmit={handleSubmit}>
+    <Form className="w-full" onSubmit={handleSubmit}>
       <TextInput
         required
         icon="mail"
