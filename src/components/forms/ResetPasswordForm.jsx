@@ -26,7 +26,7 @@ function ResetPasswordForm() {
     }
   }
   return (
-    <Form className="gap-4 py-0" onSubmit={sendResetMail}>
+    <Form className="gap-4 py-0 block border-spin max-w-sm p-6 bg-white border border-blue-400 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700" onSubmit={sendResetMail}>
       <TextInput
         required
         icon="mail"
