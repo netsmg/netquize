@@ -73,7 +73,7 @@
 
   /* Card */
   .card {
-    @apply rounded-md border-2 border-black/20 bg-[#F2F2F2] p-4 shadow-lg shadow-black/5 backdrop-blur-lg dark:border-white/20 dark:bg-[#0D0D0D] dark:shadow-white/5;
+    @apply rounded-md border-2 border-blue bg-[#F2F2F2] p-4 shadow-lg shadow-black/5 backdrop-blur-lg dark:border-white/20 dark:bg-[#0D0D0D] dark:shadow-white/5;
   }
 
   /* Button: hover fill change left to right */
