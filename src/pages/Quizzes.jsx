@@ -11,7 +11,7 @@ function Quizzes() {
       <div className="mx-auto mb-32 flex min-h-screen w-[90%] animate-reveal flex-col items-center">
         <h1 className="page-heading">Attempt Quizzes</h1>
         {data.length > 0 && (
-          <div className="mx-auto grid h-full w-full grid-cols-quizzes justify-items-center gap-7">
+          <div className="mx-auto grid h-full w-full grid-cols-quizzes justify-items-center gap-7 block max-w-sm p-6 bg-white border border-blue-800 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
             {data.map((topic, index) =>
               topic.noq > 0 ? (
                 <Link key={topic.topicID} to={`/quiz/${topic.topicID}`}>
