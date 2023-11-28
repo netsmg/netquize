@@ -38,7 +38,7 @@
 
   /* Active site page */
   .active-page {
-    @apply underline decoration-secondary underline-offset-[7px];
+    @apply underline decoration-primary underline-offset-[7px];
   }
 
   /* Answer option box */
@@ -72,9 +72,9 @@
   }
 
   /* Card */
-  .card {
-    @apply rounded-md border-2 border-black/20 bg-[#F2F2F2] p-4 shadow-lg shadow-black/5 backdrop-blur-lg dark:border-white/20 dark:bg-[#0D0D0D] dark:shadow-white/5;
-  }
+	.card {
+    @apply rounded-md border-4 border-blue-500 bg-[#F8F8F8] p-4 shadow-lg shadow-black/5 backdrop-blur-lg dark: border-white/4 dark:bg-[#0D0D0D] dark:shadow-white/5;
+}
 
   /* Button: hover fill change left to right */
   .fill-button {
