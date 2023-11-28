@@ -77,7 +77,7 @@ function LoginForm() {
           Forgot Password?
         </Link>
       </div>
-      <button className="fill-button mt-2" 
+      <button className="button" 
         disabled={loading}
         type="submit"
       >
