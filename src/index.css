@@ -73,8 +73,7 @@
 
   /* Card */
 	
-.card {
-		@apply rounded-md border-4 border-blue/20 bg-[#F2F2F2] p-4 shadow-lg shadow-black/5 backdrop-blur-lg dark: border-white/20 dark:bg-[#0D0D0D] dark:shadow-white/5;
+.card {@apply block max-w-sm p-6 bg-white border border-blue-800 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700;
 }
   /* Button: hover fill change left to right */
   .fill-button {
