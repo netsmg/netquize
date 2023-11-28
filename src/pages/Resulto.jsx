@@ -1,4 +1,4 @@
-imprt React from 'react'
+imprt React from 'react';
 
 
 const Resulto = () => { 
