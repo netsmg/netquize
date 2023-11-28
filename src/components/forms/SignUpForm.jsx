@@ -41,32 +41,38 @@ function SignUpForm() {
 
   return (
     <Form className="gap-4" onSubmit={handleSubmit}>
+        <div className="mb-4">
       <TextInput
         required
+        className="text-sm focus:shadow-soft-primary-outline leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow"
         icon="person"
         placeholder="Enter Your Name"
         type="text"
         value={userName}
         onChange={(e) => setUserName(e.target.value)}
       />
+      </div>
+      <div className="mb-4>
       <TextInput
         required
         icon="mail"
+        className="text-sm focus:shadow-soft-primary-outline leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow"
         placeholder="Enter Email ID"
         type="email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
-
-      <div className="flex h-[52px] w-full items-center rounded-md border border-black/30 bg-white p-2 outline-none dark:border-white/30 dark:bg-black/50">
+</div>
+      <div className="mb-4">
         <input
           required
-          className="ml-1 w-full rounded-lg border-none bg-transparent font-medium tracking-wide text-black outline-none dark:text-white lg:text-xl"
+          className="text-sm focus:shadow-soft-primary-outline leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow"
           placeholder="Enter Password"
           type={show ? 'text' : 'password'}
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
+        
         <button
           className="material-symbols-outlined mx-1 flex cursor-pointer items-center justify-center text-black dark:text-white md:text-3xl"
           type="button"
@@ -78,7 +84,7 @@ function SignUpForm() {
         </button>
       </div>
 
-      <TextInput
+    <div className="mb-4">  <TextInput className="text-sm focus:shadow-soft-primary-outline leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow"
         required
         icon="lock"
         placeholder="Confirm Password"
@@ -93,7 +99,7 @@ function SignUpForm() {
         value={consent}
         onChange={(e) => setConsent(e.target.value)}
       />
-
+</div>
       <button className="fill-button mt-2" disabled={loading} type="submit">
         Sign Up
       </button>
