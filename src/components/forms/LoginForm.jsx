@@ -33,24 +33,25 @@ function LoginForm() {
   }
 
   return (
-    <Form className="gap-4 py-0 block border-spin max-w-sm p-6 bg-white border border-blue-800 rounded-lg shadow hover:bg-blue-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700" onSubmit={handleSubmit}>
-      <TextInput
-        required
+     <Form  onSubmit={handleSubmit}>
+      
+      <div class="mb-4">
+<TextInput required
         icon="mail"
         placeholder="Enter Registered Email ID"
         type="email"
         value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <div className="flex h-[52px] w-full items-center rounded-md border border-black/30 bg-white p-2 outline-none dark:border-white/30 dark:bg-black/50">
-        <input
-          required
-          className="ml-1 w-full rounded-lg border-none bg-transparent font-medium tracking-wide text-black outline-none dark:text-white lg:text-xl"
-          placeholder="Enter Password"
+        onChange={(e) => setEmail(e.target.value)} class="text-sm focus:shadow-soft-primary-outline leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow"  aria-label="Email" aria-describedby="email-addon" />
+</div>
+<div class="mb-4">
+<input type="password" class="text-sm focus:shadow-soft-primary-outline leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow"
+ placeholder="Enter Password"
           type={show ? 'text' : 'password'}
           value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
+          onChange={(e) => setPassword(e.target.value)}  aria-label="Password" aria-describedby="password-addon" />
+</div>
+
+      
         <button
           className="material-symbols-outlined mx-1 flex cursor-pointer items-center justify-center text-black dark:text-white md:text-3xl"
           type="button"
@@ -85,7 +86,8 @@ function LoginForm() {
         </span>
       </div>
     </Form>
-  );
+ );
 }
 
 export default LoginForm;
+
