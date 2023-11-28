@@ -85,7 +85,7 @@
 
   /* Link bound text */
   .link-text {
-    @apply font-medium tracking-wider text-blue-500 underline-offset-4 hover:underline;
+    @apply font-medium tracking-wider  underline-offset-4 hover:underline;
   }
 
   /* Marks */
