@@ -16,7 +16,8 @@
           'primary-darker': '#116f61',
           secondary: '#ADD8E6',
           light: '#F8F8F8',
-          dark: '#030707'
+          dark: '#030707',
+          blue:'#ADD8E6'
         },
 
         fontFamily: {
