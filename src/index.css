@@ -73,8 +73,7 @@
 
   /* Card */
 	
-.card {@apply block max-w-sm p-6 bg-white border border-blue-800 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700;
-}
+
   /* Button: hover fill change left to right */
   .fill-button {
     @apply flex itemnter justify-center rounded-lg bg-primary px-4 py-2 text-2xl font-semibold uppercase tracking-wider text-black transition-all duration-300 ease-in-out hover:bg-secondary;
