@@ -3,92 +3,104 @@ import React from 'react';
 
 const Resulto = () => { 
     return (
-
-      <div className="mt-0 transition-all duration-200 ease-soft-in-out">
-        <section className="min-h-screen mb-32">
-          <div className="relative flex items-start pt-12 pb-56 m-4 overflow-hidden bg-center bg-cover min-h-50-screen rounded-xl" style={{backgroundImage: 'url("../soft-ui-dashboard-tailwind/assets/img/curved-images/curved14.jpg")'}}>
-            <span className="absolute top-0 left-0 w-full h-full bg-center bg-cover bg-gradient-to-tl from-gray-900 to-slate-800 opacity-60" />
-            <div className="container z-10">
-              <div className="flex flex-wrap justify-center -mx-3">
-              </div>
-            </div>
-          </div>
-          <div className="container">
-            <div className="flex flex-wrap -mx-3 -mt-48 md:-mt-56 lg:-mt-48">
-              <div className="w-full max-w-full px-3 mx-auto mt-0 md:flex-0 shrink-0 md:w-7/12 lg:w-5/12 xl:w-4/12">
-                <div className="relative z-0 flex flex-col min-w-0 break-words bg-white border-0 shadow-soft-xl rounded-2xl bg-clip-border">
-                  <div className="p-6 mb-0 text-center bg-white border-b-0 rounded-t-2xl">
-                    <h5 className="inline-block w-full px-6 py-3 mb-4 font-bold text-center text-blue-800 uppercase align-middle transition-all bg-transparent border border-gray-200 border-solid rounded-lg shadow-none cursor-pointer hover:scale-102 leading-pro text-xs ease-soft-in tracking-tight-soft bg-150 bg-x-25 hover:bg-transparent hover:opacity-75">Register with</h5>
-                  </div>
-                  <div className="flex flex-wrap px-3 -mx-3 sm:px-6 xl:px-12">
-                    <div className="w-3/12 max-w-full px-1 ml-auto flex-0">
-                      <a className="inline-block w-full px-6 py-3 mb-4 font-bold text-center text-gray-200 uppercase align-middle transition-all bg-transparent border border-gray-200 border-solid rounded-lg shadow-none cursor-pointer hover:scale-102 leading-pro text-xs ease-soft-in tracking-tight-soft bg-150 bg-x-25 hover:bg-transparent hover:opacity-75" href="javascript:;">
-                        <svg width="24px" height="32px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink32">
-                          <g stroke="none" strokeWidth={1} fill="none" fillRule="evenodd">
-                            <g transform="translate(3.000000, 3.000000)" fillRule="nonzero">
-                              <circle fill="#3C5A9A" cx="29.5091719" cy="29.4927506" r="29.4882047" />
-                              <path d="M39.0974944,9.05587273 L32.5651312,9.05587273 C28.6886088,9.05587273 24.3768224,10.6862851 24.3768224,16.3054653 C24.395747,18.2634019 24.3768224,20.1385313 24.3768224,22.2488655 L19.8922122,22.2488655 L19.8922122,29.3852113 L24.5156022,29.3852113 L24.5156022,49.9295284 L33.0113092,49.9295284 L33.0113092,29.2496356 L38.6187742,29.2496356 L39.1261316,22.2288395 L32.8649196,22.2288395 C32.8649196,22.2288395 32.8789377,19.1056932 32.8649196,18.1987181 C32.8649196,15.9781412 35.1755132,16.1053059 35.3144932,16.1053059 C36.4140178,16.1053059 38.5518876,16.1085101 39.1006986,16.1053059 L39.1006986,9.05587273 L39.0974944,9.05587273 L39.0974944,9.05587273 Z" fill="#FFFFFF" />
-                            </g>
-                          </g>
-                        </svg>
-                      </a>
-                    </div>
-                    <div className="w-3/12 max-w-full px-1 flex-0">
-                      <a className="inline-block w-full px-6 py-3 mb-4 font-bold text-center text-gray-200 uppercase align-middle transition-all bg-transparent border border-gray-200 border-solid rounded-lg shadow-none cursor-pointer hover:scale-102 leading-pro text-xs ease-soft-in tracking-tight-soft bg-150 bg-x-25 hover:bg-transparent hover:opacity-75" href="javascript:;">
-                        <svg width="24px" height="32px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
-                          <g stroke="none" strokeWidth={1} fill="none" fillRule="evenodd">
-                            <g transform="translate(7.000000, 0.564551)" fill="#000000" fillRule="nonzero">
-                              <path d="M40.9233048,32.8428307 C41.0078713,42.0741676 48.9124247,45.146088 49,45.1851909 C48.9331634,45.4017274 47.7369821,49.5628653 44.835501,53.8610269 C42.3271952,57.5771105 39.7241148,61.2793611 35.6233362,61.356042 C31.5939073,61.431307 30.2982233,58.9340578 25.6914424,58.9340578 C21.0860585,58.9340578 19.6464932,61.27947 15.8321878,61.4314159 C11.8738936,61.5833617 8.85958554,57.4131833 6.33064852,53.7107148 C1.16284874,46.1373849 -2.78641926,32.3103122 2.51645059,22.9768066 C5.15080028,18.3417501 9.85858819,15.4066355 14.9684701,15.3313705 C18.8554146,15.2562145 22.5241194,17.9820905 24.9003639,17.9820905 C27.275104,17.9820905 31.733383,14.7039812 36.4203248,15.1854154 C38.3824403,15.2681959 43.8902255,15.9888223 47.4267616,21.2362369 C47.1417927,21.4153043 40.8549638,25.1251794 40.9233048,32.8428307 M33.3504628,10.1750144 C35.4519466,7.59650964 36.8663676,4.00699306 36.4804992,0.435448578 C33.4513624,0.558856931 29.7884601,2.48154382 27.6157341,5.05863265 C25.6685547,7.34076135 23.9632549,10.9934525 24.4233742,14.4943068 C27.7996959,14.7590956 31.2488715,12.7551531 33.3504628,10.1750144" />
-                            </g>
-                          </g>
-                        </svg>
-                      </a>
-                    </div>
-                    <div className="w-3/12 max-w-full px-1 mr-auto flex-0">
-                      <a className="inline-block w-full px-6 py-3 mb-4 font-bold text-center text-gray-200 uppercase align-middle transition-all bg-transparent border border-gray-200 border-solid rounded-lg shadow-none cursor-pointer hover:scale-102 leading-pro text-xs ease-soft-in tracking-tight-soft bg-150 bg-x-25 hover:bg-transparent hover:opacity-75" href="javascript:;">
-                        <svg width="24px" height="32px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
-                          <g stroke="none" strokeWidth={1} fill="none" fillRule="evenodd">
-                            <g transform="translate(3.000000, 2.000000)" fillRule="nonzero">
-                              <path d="M57.8123233,30.1515267 C57.8123233,27.7263183 57.6155321,25.9565533 57.1896408,24.1212666 L29.4960833,24.1212666 L29.4960833,35.0674653 L45.7515771,35.0674653 C45.4239683,37.7877475 43.6542033,41.8844383 39.7213169,44.6372555 L39.6661883,45.0037254 L48.4223791,51.7870338 L49.0290201,51.8475849 C54.6004021,46.7020943 57.8123233,39.1313952 57.8123233,30.1515267" fill="#4285F4" />
-                              <path d="M29.4960833,58.9921667 C37.4599129,58.9921667 44.1456164,56.3701671 49.0290201,51.8475849 L39.7213169,44.6372555 C37.2305867,46.3742596 33.887622,47.5868638 29.4960833,47.5868638 C21.6960582,47.5868638 15.0758763,42.4415991 12.7159637,35.3297782 L12.3700541,35.3591501 L3.26524241,42.4054492 L3.14617358,42.736447 C7.9965904,52.3717589 17.959737,58.9921667 29.4960833,58.9921667" fill="#34A853" />
-                              <path d="M12.7159637,35.3297782 C12.0932812,33.4944915 11.7329116,31.5279353 11.7329116,29.4960833 C11.7329116,27.4640054 12.0932812,25.4976752 12.6832029,23.6623884 L12.6667095,23.2715173 L3.44779955,16.1120237 L3.14617358,16.2554937 C1.14708246,20.2539019 0,24.7439491 0,29.4960833 C0,34.2482175 1.14708246,38.7380388 3.14617358,42.736447 L12.7159637,35.3297782" fill="#FBBC05" />
-                              <path d="M29.4960833,11.4050769 C35.0347044,11.4050769 38.7707997,13.7975244 40.9011602,15.7968415 L49.2255853,7.66898166 C44.1130815,2.91684746 37.4599129,0 29.4960833,0 C17.959737,0 7.9965904,6.62018183 3.14617358,16.2554937 L12.6832029,23.6623884 C15.0758763,16.5505675 21.6960582,11.4050769 29.4960833,11.4050769" fill="#EB4335" />
-                            </g>
-                          </g>
-                        </svg>
-                      </a>
-                    </div>
-                    <div className="relative w-full max-w-full px-3 mt-2 text-center shrink-0">
-                      <p className="z-20 inline px-4 mb-2 font-semibold leading-normal bg-white text-sm text-slate-400">or</p>
-                    </div>
-                  </div>
-                  <div className="flex-auto p-6">
-                    <form role="form text-left">
-                      <div className="mb-4">
-                        <input type="text" className="text-sm focus:shadow-soft-primary-outline leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow" placeholder="Name" aria-label="Name" aria-describedby="email-addon" />
-                      </div>
-                      <div className="mb-4">
-                        <input type="email" className="text-sm focus:shadow-soft-primary-outline leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow" placeholder="Email" aria-label="Email" aria-describedby="email-addon" />
-                      </div>
-                      <div className="mb-4">
-                        <input type="password" className="text-sm focus:shadow-soft-primary-outline leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow" placeholder="Password" aria-label="Password" aria-describedby="password-addon" />
-                      </div>
-                      <div className="min-h-6 pl-6.92 mb-0.5 block">
-                        <input id="terms" className="w-4.92 h-4.92 ease-soft -ml-6.92 rounded-1.4 checked:bg-gradient-to-tl checked:from-gray-900 checked:to-slate-800 after:text-xxs after:font-awesome after:duration-250 after:ease-soft-in-out duration-250 relative float-left mt-1 cursor-pointer appearance-none border border-solid border-slate-200 bg-white bg-contain bg-center bg-no-repeat align-top transition-all after:absolute after:flex after:h-full after:w-full after:items-center after:justify-center after:text-white after:opacity-0 after:transition-all after:content-['\f00c'] checked:border-0 checked:border-transparent checked:bg-transparent checked:after:opacity-100" type="checkbox" defaultValue defaultChecked />
-                        <label className="mb-2 ml-1 font-normal cursor-pointer select-none text-sm text-slate-700" htmlFor="terms"> I agree the <a href="javascript:;" className="font-bold text-slate-700">Terms and Conditions</a> </label>
-                      </div>
-                      <div className="text-center">
-                        <button type="button" className="inline-block w-full px-6 py-3 mt-6 mb-2 font-bold text-center text-white uppercase align-middle transition-all bg-transparent border-0 rounded-lg cursor-pointer active:opacity-85 hover:scale-102 hover:shadow-soft-xs leading-pro text-xs ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25 bg-gradient-to-tl from-gray-900 to-slate-800 hover:border-slate-700 hover:bg-slate-700 hover:text-white">Sign up</button>
-                      </div>
-                      <p className="mt-4 mb-0 leading-normal text-sm">Already have an account? <a href="/login" className="font-bold text-slate-700">Sign in</a></p>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+<div>
+  <div className="container">
+    <div className="ClockHolder">
+      <div className="WeekDays">
+        <span>sat</span>
+        <span>sun</span>
+        <span>mon</span>
+        <span>tue</span>
+        <span>wed</span>
+        <span>thu</span>
+        <span>fri</span>
       </div>
+      <div className="TimeHolder">
+        <div className="TimeOptions">
+          <i className="fas fa-clock" data-title="Time" />
+          <i className="fas fa-stopwatch" data-title="StopWatch" />
+          <i className="far fa-clock" data-title="CountDown" />
+        </div>
+        <div className="Numbers">
+          <div className="NumberHolder H1">
+            <span className="d1" />
+            <span className="d2" />
+            <span className="d3" />
+            <span className="d4" />
+            <span className="d5" />
+            <span className="d6" />
+            <span className="d7" />
+          </div>
+          <div className="NumberHolder H2">
+            <span className="d1" />
+            <span className="d2" />
+            <span className="d3" />
+            <span className="d4" />
+            <span className="d5" />
+            <span className="d6" />
+            <span className="d7" />
+          </div>
+          <span>:</span>
+          <div className="NumberHolder M1">
+            <span className="d1" />
+            <span className="d2" />
+            <span className="d3" />
+            <span className="d4" />
+            <span className="d5" />
+            <span className="d6" />
+            <span className="d7" />
+          </div>
+          <div className="NumberHolder M2">
+            <span className="d1" />
+            <span className="d2" />
+            <span className="d3" />
+            <span className="d4" />
+            <span className="d5" />
+            <span className="d6" />
+            <span className="d7" />
+          </div>
+          <span>:</span>
+          <div className="NumberHolder S1">
+            <span className="d1" />
+            <span className="d2" />
+            <span className="d3" />
+            <span className="d4" />
+            <span className="d5" />
+            <span className="d6" />
+            <span className="d7" />
+          </div>
+          <div className="NumberHolder S2">
+            <span className="d1" />
+            <span className="d2" />
+            <span className="d3" />
+            <span className="d4" />
+            <span className="d5" />
+            <span className="d6" />
+            <span className="d7" />
+          </div>
+        </div>
+        <div className="AlarmInput">
+          <input type="number" placeholder="Enter Seconds" />
+        </div>
+        <div className="TimeFormat">
+          <div className="Type">
+            <span>12hr</span>
+            <span className="active">24hr</span>
+          </div>
+          <div className="Formats">
+            <span>am</span>
+            <span>pm</span>
+          </div>
+          <div className="control">
+            <span className="Start active"><i className="fas fa-play" />Start</span>
+            <span className="Pause"><i className="fas fa-pause" />Pause</span>
+            <span className="Stop active"><i className="fas fa-stop" />Stop</span>
+          </div>
+        </div></div></div></div>
+  <style dangerouslySetInnerHTML={{__html: "\n   \n\n\n\n\n\n\n\n\n  \n  \n\n  \nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed, \nfigure, figcaption, footer, header, hgroup, \nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\nmargin: 0;\npadding: 0;\nborder: 0;\nfont-size: 100%;\nfont: inherit;\nvertical-align: baseline;\n  width:100%;\n}\narticle, aside, details, figcaption, figure, \nfooter, header, hgroup, menu, nav, section {\ndisplay: block;\n}\nbody {\nbackground: url(https://82.servimg.com/u/f82/19/38/53/40/f-310.jpg) repeat top left;\nfont-family: 'Text Me One', sans-serif;\nline-height: 1;\n}\nol, ul {\nlist-style: none;\n}\nblockquote, q {\nquotes: none;\n}\nblockquote:before, blockquote:after,\nq:before, q:after {\ncontent: '';\ncontent: none;\n}\ntable {\nborder-collapse: collapse;\nborder-spacing: 0;\n}\n.container {\nwidth: 90%;\nmax-width: 1400px;\nposition:standard;\ntop: 50%;\nleft: 50%;\n\ntransform: translate(-50%,-50%);\ndisplay: flex;\njustify-content: center;\n}\n.ClockHolder {\nwidth: 500px;\nbackground-color: #1b252a;\npadding: 30px 50px;\n/* border-radius: 15px; */\nborder: 3px solid #0277bd;\nposition: relative;\n}\n.ClockHolder::after {\ncontent: \" \";\nposition: absolute;\nbottom: -15px;\nleft: 50%;\nwidth: 70%;\nheight: 15px;\nbackground-color: #0277bd;\ntransform: translate(-50%,0);\n/* border-radius: 3px 3px 8px 8px; */\n}\n.ClockHolder::before {\n}\n.WeekDays {\ndisplay: flex;\nwidth: 100%;\njustify-content: space-between;\ntext-transform: uppercase;\ncolor: #646c72;\ncursor: default;\n}\n.WeekDays .active{\ncolor: aliceblue;\nposition: relative;\n}\n.WeekDays .active::after {\ncontent: \"\";\nposition: absolute;\nbottom: -3px;\nleft: 0;\nheight: 2px;\nwidth: 100%;\nbackground-color: aliceblue;\n}\n.Numbers, .TimeHolder {\ndisplay: flex;\njustify-content: space-around;\nwidth: 100%;\npadding: 20px 0 5px;\nalign-items: flex-end;\n}\n.NumberHolder {\nposition: relative;\nwidth: 60px;\nheight: 95px;\n}\n.d1, .d2, .d3, .d4, .d5, .d6, .d7 {\nwidth: 8px;\nheight: 40px;\nbackground-color: azure;\nposition: absolute;\n}\n.d1::after, .d2::after, .d3::after, .d4::after, .d5::after, .d6::after, .d7::after {\ncontent: \"\";\nposition: absolute;\nbackground-color: azure;\nwidth: 7px;\nheight: 7px;\ntop: -7px;\nleft: 0;\nclip-path: polygon(0 0, 0% 100%, 100% 100%);\n}\n.d1::before, .d2::before, .d3::before, .d4::before, .d5::before, .d6::before, .d7::before {\ncontent: \"\";\nposition: absolute;\nbackground-color: azure;\nwidth: 7px;\nheight: 7px;\nbottom: -7px;\nleft: 0;\nclip-path: polygon(0 0, 100% 0, 0 100%);\n}\n.d7 {\ntop: 50%;\nleft: 50%;\ntransform: translate(-50%,-50%) rotate(90deg);\n}\n.d7::before {\nclip-path: polygon(0 0, 100% 0, 50% 100%);\n}\n.d7::after {\nclip-path: polygon(0 100%, 100% 100%, 50% 0);\n}\n@keyframes From01 {\nfrom {\ntop: 0;\nleft: 0;\n}\nto {\ntop: 0;\nleft: calc( 100% - 7px );\ntransform: rotate(180deg);\n}\n}\n@keyframes From02 {\nfrom {\nbottom: 0;\nleft: 0;\n}\nto {\nbottom: 0;\nleft: calc(100% - 7px);\ntransform: rotate(180deg);\n}\n}\n@keyframes From05 {\nfrom {\ntop: -22px;\nleft: 7px;\ntransform: rotate(90deg) translate(-50%,-50%);\n}\nto {\ntop: 0;\nleft: calc(100% - 7px);\ntransform: rotate(180deg);\n}\n}\n@keyframes From06 {\nfrom {\nbottom: -22px;\nleft: 7px;\ntransform: rotate(-90deg) translate(-50%,50%);\n}\nto {\nbottom: 0;\nleft: calc(100% - 7px);\ntransform: rotate(180deg) translate(0,0);\n}\n}\n.TimeOptions {\ndisplay: flex;\nflex-direction: column;\ncolor: aliceblue;\n}\n.Numbers>span {\nfont-size: 100px;\ncolor: aliceblue;\n}\n.NumberHolder {\nmargin: 0 7px;\n}\n.Formats span {\ndisplay: none;\ncolor: aliceblue;\nfont-size: 2em;\ncursor: default;\n}\n.Formats .active {\ndisplay: block;\n}\n.Type {\ndisplay: flex;\nflex-direction: column;\ncolor: #98afaf;\n}\n.Type span {\nposition: relative;\nmargin: 2px 0;\ncursor: pointer;\n}\n.Type span::before {\ncontent: \"\";\nposition: absolute;\nbottom: -1px;\nleft: 0;\nwidth: 0;\nheight: 1px;\nbackground-color: #98afaf;\ntransition: all .4s ease;\n}\n.Type span:hover::before {\nwidth: 100%;\n}\n.TimeFormat {\ndisplay: flex;\nflex-direction: column;\njustify-content: space-between;\nheight: 110px;\n}\n.Type .active {\ncolor: aquamarine;\n}\n.Type .active::after {\ncontent: \"\\f053\";\nfont-weight: 900;\nfont-family: \"Font Awesome 5 Free\";\nposition: absolute;\ntop: 50%;\nright: -20px;\ntransform: translate(-50%,-50%);\n}\n.Type .active::before {\nwidth: 100%;\n}\n.TimeOptions i {\nmargin: 10px 3px;\nposition: relative;\ncursor: pointer;\n}\n.TimeOptions i::after {\ndisplay: block;\nopacity: 0;\npointer-events: none;\nposition: absolute;\nbackground: #fff;\ncolor: #646464;\ncontent: attr(data-title);\nfont-size: 12px;\npadding: 3px 11px;\ntop: -45%;\nleft: 50%;\nwhite-space: nowrap;\ntransform: translate(-50%,-50%) scale3d(.2,.2,1);\ntransition: all .35s ease-in-out;\nline-height: initial;\n/* border-radius: 100px; */\nz-index: 20;\n}\n.control {\ndisplay: none;\ncolor: #f0ffff;\nposition: relative;\nmargin-left: 10px\n}\n.control span {\nposition: relative;\ncursor: pointer;\ntext-align: center;\ndisplay: none;\nmargin-bottom: 20px;\n}\n.control .Pause {\ndisplay: none;\n}\n.control span.active {\ndisplay: block;\n}\n.control span i {\nmargin-bottom: 5px;\n}\n.TimeOptions i:hover::after {\nopacity: 1;\ntransform: translate(-50%,-50%) scale3d(1,1,1);\n}\n.StopWatch .Type, .StopWatch .Formats, .Alarm .Type, .Alarm .Formats {\ndisplay: none;\n}\n.StopWatch .control,.Alarm .control {\ndisplay: block;\n}\n.ClockHolder::before {\ncontent: \"\";\nposition: absolute;\nwidth: 110%;\nheight: 10px;\nbackground-color: #00000077;\nbottom: -25px;\nleft: -5%;\nborder-radius: 100%;\nfilter: blur(5px);\n}\n.AlarmInput {\ndisplay: none;\n}\n.AlarmInput input {\nheight: 100px;\nfont-size: 100px;\nmax-width: 400px;\nfont-family: 'Orbitron', sans-serif;\nbackground-color: #1b252a;\nborder: none;\npadding: 5px 20px;\ncolor: azure;\nletter-spacing: 5px;\nposition: relative;\n}\n.AlarmInput input:focus {\nborder: 1px solid #fff;\n}\n.Alarm .AlarmInput {\ndisplay: block;\n}\n.Alarm .AlarmInput.DisNone {\ndisplay: none;\n}\n.AlarmInput input::-webkit-input-placeholder {\nfont-size: 30px;\n}\n.AlarmInput input::-moz-placeholder {\nfont-size: 30px;\n}\n.AlarmInput input:-ms-input-placeholder {\nfont-size: 30px;\n}\n.AlarmInput input:-moz-placeholder {\nfont-size: 30px;\n}\n.show1 .d1 {\nanimation: From01 .35s ease 1 forwards;\n}\n.show1 .d2 {\nanimation: From02 .35s ease 1 forwards;\n}\n.show1 .d3 {\ntop: 0;\nleft: calc( 100% - 7px );\ntransform: rotate(180deg);\n}\n.show1 .d4 {\nbottom: 0;\nleft: calc(100% - 7px);\ntransform: rotate(180deg);\n}\n.show1 .d5 {\nanimation: From05 .35s ease 1 forwards;\n}\n.show1 .d6 {\nanimation: From06 .35s ease 1 forwards;\n}\n.show1 .d7 {\nopacity: 0;\n}\n.show2 .d1 {\ntop: 0;\nleft: calc( 100% - 7px );\ntransform: rotate(180deg);\n}\n.show2 .d2 {\nanimation: From12 .35s ease 1 forwards;\n}\n.show2 .d3 {\ntop: 0;\nleft: calc( 100% - 7px );\ntransform: rotate(180deg);\n}\n.show2 .d4 {\nanimation: From16 .35s ease 1 forwards;\n}\n.show2 .d5 {\nanimation: From15 .35s ease 1 forwards;\n}\n.show2 .d6 {\nanimation: From16 .35s ease 1 forwards;\n}\n.show2 .d7 {\nopacity: 1;\ntransition: opacity .35s ease;\n}\n@keyframes From12 {\nfrom {\nbottom: 0;\nleft: calc(100% - 7px);\ntransform: rotate(180deg);\n}\nto {\nbottom: 0;\nleft: 0;\n}\n}\n@keyframes From15 {\nfrom {\ntop: 0;\nleft: calc(100% - 7px);\ntransform: rotate(180deg);\n}\nto {\ntop: -22px;\nleft: 7px;\ntransform: rotate(90deg) translate(-50%,-50%);\n}\n}\n@keyframes From16 {\nfrom {\nbottom: 0;\nleft: calc(100% - 7px);\ntransform: rotate(180deg) translate(0,0);\n}\nto {\nbottom: -22px;\nleft: 7px;\ntransform: rotate(-90deg) translate(-50%,50%);\n}\n}\n.show3 .d1 {\ntop: 0;\nleft: calc( 100% - 7px );\ntransform: rotate(180deg);\n}\n.show3 .d2 {\nanimation: From22 .35s ease 1 forwards;\n}\n.show3 .d3 {\ntop: 0;\nright: 0;\ntransform: rotate(180deg);\n}\n.show3 .d4 {\nanimation: From24 .35s ease 1 forwards;\n}\n.show3 .d5 {\ntop: -22px;\nleft: 7px;\ntransform: rotate(90deg) translate(-50%,-50%);\n}\n.show3 .d6 {\nanimation: From24 .35s ease 1 forwards;\n}\n.show3 .d7 {\nopacity: 1;\ntransition: opacity .35s ease;\n}\n@keyframes From22 {\nfrom {\nbottom: 0;\nleft: 0;\n}\nto {\nbottom: -22px;\nleft: 7px;\ntransform: rotate(-90deg) translate(-50%,50%);\n}\n}\n@keyframes From24 {\nfrom {\nbottom: -22px;\nleft: 7px;\ntransform: rotate(-90deg) translate(-50%,50%);\n}\nto {\nbottom: 0;\nright: 0;\ntransform: rotate(180deg) translate(0,0);\n}\n}\n.show4 .d1 {\nanimation: From31 .35s ease 1 forwards;\n}\n.show4 .d2 {\ntop: 0;\nright: 0;\ntransform: rotate(180deg);\n}\n.show4 .d3 {\ntop: 0;\nright: 0;\ntransform: rotate(180deg);\n}\n.show4 .d4 {\nbottom: 0;\nright: 0;\ntransform: rotate(180deg);\n}\n.show4 .d5 {\nanimation: From31 .35s ease 1 forwards;\n}\n.show4 .d6 {\nanimation: From36 .35s ease 1 forwards;\n}\n.show4 .d7 {\nopacity: 1;\ntransition: opacity .35s ease;\n}\n@keyframes From31 {\nfrom {\ntop: -22px;\nleft: 7px;\ntransform: rotate(90deg) translate(-50%,-50%);\n}\nto {\ntop: 0;\nleft: 0;\n}\n}\n@keyframes From32 {\nfrom {\nbottom: 0;\nleft: 0;\n}\nto {\nbottom: -22px;\nleft: 7px;\ntransform: rotate(-90deg) translate(-50%,50%);\n}\n}\n@keyframes From36 {\nfrom {\nbottom: -22px;\nleft: 7px;\ntransform: rotate(-90deg) translate(-50%,50%);\n}\nto {\nbottom: 0;\nright: 0;\ntransform: rotate(180deg) translate(0,0);\n}\n}\n.show5 .d1 {\ntop: 0;\nleft: 0;\n}\n.show5 .d2 {\nbottom: 0;\nright: 0;\ntransform: rotate(180deg);\n}\n.show5 .d3 {\nanimation: From43 .35s ease 1 forwards;\n}\n.show5 .d4 {\nbottom: 0;\nright: 0;\ntransform: rotate(180deg);\n}\n.show5 .d5 {\nanimation: From43 .35s ease 1 forwards;\n}\n.show5 .d6 {\nanimation: From46 .35s ease 1 forwards;\n}\n.show5 .d7 {\nopacity: 1;\ntransition: opacity .35s ease;\n}\n@keyframes From43 {\nfrom {\ntop: 0;\nright: 0;\ntransform: rotate(180deg) translate(0,0);\n}\nto {\ntop: -22px;\nleft: 7px;\ntransform: rotate(90deg) translate(-50%,-50%);\n}\n}\n@keyframes From42 {\nfrom {\nbottom: 0;\nleft: 0;\n}\nto {\nbottom: -22px;\nleft: 7px;\ntransform: rotate(-90deg) translate(-50%,50%);\n}\n}\n@keyframes From46 {\nfrom {\nbottom: 0;\nright: 0;\ntransform: rotate(180deg) translate(0,0);\n}\nto {\nbottom: -22px;\nleft: 7px;\ntransform: rotate(-90deg) translate(-50%,50%);\n}\n}\n.show6 .d1 {\ntop: 0;\nleft: 0;\n}\n.show6 .d2 {\nanimation: From52 .35s ease 1 forwards;\n}\n.show6 .d3 {\nbottom: 0;\nright: 0;\ntransform: rotate(180deg);\n}\n.show6 .d4 {\nbottom: 0;\nright: 0;\ntransform: rotate(180deg);\n}\n.show6 .d5 {\ntop: -22px;\nleft: 7px;\ntransform: rotate(90deg) translate(-50%,-50%);\n}\n.show6 .d6 {\nbottom: -22px;\nleft: 7px;\ntransform: rotate(-90deg) translate(-50%,50%);\n}\n.show6 .d7 {\nopacity: 1;\ntransition: opacity .35s ease;\n}\n@keyframes From52 {\nfrom {\nbottom: -22px;\nleft: 7px;\ntransform: rotate(-90deg) translate(-50%,50%);\n}\nto {\nbottom: 0;\nleft: 0;\n}\n}\n.show7 .d1 {\nanimation: From61 .35s ease 1 forwards;\n}\n.show7 .d2 {\nanimation: From62 .35s ease 1 forwards;\n}\n.show7 .d3 {\nanimation: From63 .35s ease 1 forwards;\n}\n.show7 .d4 {\nbottom: 0;\nright: 0;\ntransform: rotate(180deg);\n}\n.show7 .d5 {\ntop: -22px;\nleft: 7px;\ntransform: rotate(90deg) translate(-50%,-50%);\n}\n.show7 .d6 {\nanimation: From66 .35s ease 1 forwards;\n}\n.show7 .d7 {\nopacity: 0;\ntransition: opacity .35s ease;\n}\n@keyframes From61 {\nfrom {\ntop: 0;\nleft: 0;\n}\nto {\ntop: 0;\nright: 0;\ntransform: rotate(180deg);\n}\n}\n@keyframes From63 {\nfrom {\ntop: -22px;\nleft: 7px;\ntransform: rotate(90deg) translate(-50%,-50%);\n}\nto {\ntop: 0;\nright: 0;\ntransform: rotate(180deg);\n}\n}\n@keyframes From62 {\nfrom {\nbottom: 0;\nleft: 0;\n}\nto {\nbottom: 0;\nright: 0;\ntransform: rotate(180deg);\n}\n}\n@keyframes From66 {\nfrom {\nbottom: -22px;\nleft: 7px;\ntransform: rotate(-90deg) translate(-50%,50%);\n}\nto {\nbottom: 0;\nright: 0;\ntransform: rotate(180deg);\n}\n}\n.show8 .d1 {\nanimation: From71 .35s ease 1 forwards;\n}\n.show8 .d2 {\nanimation: From72 .35s ease 1 forwards;\n}\n.show8 .d3 {\ntop: 0;\nright: 0;\ntransform: rotate(180deg);\n}\n.show8 .d4 {\nbottom: 0;\nright: 0;\ntransform: rotate(180deg);\n}\n.show8 .d5 {\ntop: -22px;\nleft: 7px;\ntransform: rotate(90deg) translate(-50%,-50%);\n}\n.show8 .d6 {\nanimation: From76 .35s ease 1 forwards;\n}\n.show8 .d7 {\nopacity: 1;\ntransition: opacity .35s ease;\n}\n@keyframes From71 {\nfrom {\ntop: -22px;\nleft: 7px;\ntransform: rotate(90deg) translate(-50%,-50%);\n}\nto {\ntop: 0;\nleft: 0;\n}\n}\n@keyframes From72 {\nfrom {\nbottom: 0;\nright: 0;\ntransform: rotate(180deg);\n}\nto {\nbottom: 0;\nleft: 0;\n}\n}\n@keyframes From76 {\nfrom {\nbottom: 0;\nright: 0;\ntransform: rotate(180deg);\n}\nto {\nbottom: -22px;\nleft: 7px;\ntransform: rotate(-90deg) translate(-50%,50%);\n}\n}\n.show9 .d1 {\ntop: 0;\nleft: 0;\n}\n.show9 .d2 {\nanimation: From82 .35s ease 1 forwards;\n}\n.show9 .d3 {\ntop: 0;\nright: 0;\ntransform: rotate(180deg);\n}\n.show9 .d4 {\nbottom: 0;\nright: 0;\ntransform: rotate(180deg);\n}\n.show9 .d5 {\ntop: -22px;\nleft: 7px;\ntransform: rotate(90deg) translate(-50%,-50%);\n}\n.show9 .d6 {\nbottom: -22px;\nleft: 7px;\ntransform: rotate(-90deg) translate(-50%,50%);\n}\n.show9 .d7 {\nopacity: 1;\ntransition: opacity .35s ease;\n}\n@keyframes From82 {\nfrom {\nbottom: 0;\nleft: 0;\n}\nto {\nbottom: -22px;\nleft: 7px;\ntransform: rotate(-90deg) translate(-50%,50%);\n}\n}\n.show0 .d1 {\ntop: 0;\nleft: 0;\n}\n.show0 .d2 {\nanimation: From92 .35s ease 1 forwards;\n}\n.show0 .d3 {\ntop: 0;\nright: 0;\ntransform: rotate(180deg);\n}\n.show0 .d4 {\nbottom: 0;\nright: 0;\ntransform: rotate(180deg);\n}\n.show0 .d5 {\ntop: -22px;\nleft: 7px;\ntransform: rotate(90deg) translate(-50%,-50%);\n}\n.show0 .d6 {\nbottom: -22px;\nleft: 7px;\ntransform: rotate(-90deg) translate(-50%,50%);\n}\n.show0 .d7 {\nopacity: 0;\ntransition: opacity .35s ease;\n}\n@keyframes From92 {\nfrom {\nbottom: -22px;\nleft: 7px;\ntransform: rotate(-90deg) translate(-50%,50%);\n}\nto {\nbottom: 0;\nleft: 0;\n}\n}\n.BgAnimation {\nanimation: Colors .35s ease infinite alternate;\n}\n@keyframes Colors {\n0% {\nbackground-color: #7b1fa2;\n}\n100% {\nbackground-color: red;\n}\n}" }} />
+</div>
+      
+                      
     );
   
 };
