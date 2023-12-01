@@ -12,10 +12,10 @@ export      default     function    Create(){
     const       number=InputHandler('')
 //    const        [error,setError]=useState('')
     return  <div >
-        <Header/>
+        
        <div className="teacher__component">
        <div    className="teacher__sidebar">
-        <Sidebar/>
+        
 
         </div>
         <div    className="form__contents">
