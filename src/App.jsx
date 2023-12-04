@@ -27,6 +27,7 @@ import {
   DetailedSubmission,
   Dashboard,
   Exam,
+  Faq,
   Home,
   Learn,
   Login,
@@ -90,6 +91,7 @@ function Root() {
           <Route element={<Learn />} path="/learn" />
            <Route element={<SignUp />} path="/signup" />
           <Route element={<Resulto />} path="/resulto" />
+          <Route element={<Faq />} path="/faq" />
 <Route element={<Exam />} path="/exam" />
 <Route element={<Dashboard />} path="/dashboard" />
 
