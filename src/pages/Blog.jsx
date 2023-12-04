@@ -6,34 +6,34 @@ const Blog = () => {
   const blogData = [
     {
       id: 1,
-      title: "Lenovo’s smarter devices stoke professional passions",
+      title: "professional passions",
       categories: ["Garden", "Videos"],
       author: {
-        name: "Lila",
+        name: "NESG",
         avatar: "https://codewithsadee.github.io/vast/assets/images/blog-1.jpg",
       },
-      date: "Sep 18, 2021",
+      date: "Sep 18, 2023",
       readingTime: 3,
       image: "https://codewithsadee.github.io/vast/assets/images/blog-1.jpg",
     },
    {
       id: 2,
-      title: "Lenovo’s smarter devices stoke professional passions",
+      title: "professional passions",
       categories: ["Garden", "Videos"],
       author: {
         name: "Lila",
         avatar: "https://codewithsadee.github.io/vast/assets/images/blog-1.jpg",
       },
-      date: "Sep 18, 2021",
+      date: "Dec 18, 2024",
       readingTime: 3,
       image: "https://codewithsadee.github.io/vast/assets/images/blog-1.jpg",
     },
     {
       id: 3,
-      title: "Lenovo’s smarter devices stoke professional passions",
-      categories: ["Garden", "Videos"],
+      title: " stoke professional passions",
+      categories: ["RTPCR", "Videos"],
       author: {
-        name: "Lila",
+        name: "Law",
         avatar: "https://codewithsadee.github.io/vast/assets/images/blog-1.jpg",
       },
       date: "Sep 18, 2021",
