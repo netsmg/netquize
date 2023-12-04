@@ -15,6 +15,7 @@ export { default as ContactUs } from './ContactUs';
 export { default as CountUpAnimation } from './CountUpAnimation';
 export { default as DesignComponent } from './DesignComponent';
 export { default as DetailedReport } from './DetailedReport';
+export { default as Faqs } from './Faqs';
 export { default as FileSaver } from './FileSaver';
 export { default as Footer } from './Footer';
 export { default as MainNavigationBar } from './MainNavigationBar';
