@@ -176,7 +176,7 @@ function App() {
               style: {
                 color: '#000',
                 fontWeight: 600,
-                background: '#44BBA9'
+                background: '#CCCCFF'
               },
               duration: 3000
             }}
