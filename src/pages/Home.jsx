@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import { coding, hero, logo } from '../assets';
-import { BasicInfo, ContactUs, Faqs } from '../components';
+import { BasicInfo, Footer, Faqs } from '../components';
 
 function Home() {
   const [imageLoaded, setImageLoaded] = useState(false);
