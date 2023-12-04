@@ -18,6 +18,7 @@ export { default as DetailedReport } from './DetailedReport';
 export { default as Faqs } from './Faqs';
 export { default as FileSaver } from './FileSaver';
 export { default as Footer } from './Footer';
+export { default as Lists } from './Lists';
 export { default as MainNavigationBar } from './MainNavigationBar';
 export { default as PopularQuizzes } from './PopularQuizzes';
 export { default as Preloader } from './Preloader';
