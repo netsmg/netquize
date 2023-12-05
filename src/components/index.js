@@ -28,7 +28,6 @@ export { default as Rules } from './Rules';
 export { default as ScoreCard } from './ScoreCard';
 export { default as SignInWithGoogleButton } from './SignInWithGoogleButton';
 export { default as SubNavigationBar } from './SubNavigationBar';
-export { default as Subscriber } from './Subscriber';
 export { default as SwitchTheme } from './SwitchTheme';
 export { default as Thumbnail } from './Thumbnail';
 export { default as UserDetail } from './UserDetail';
