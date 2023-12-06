@@ -11,13 +11,11 @@ function Chat() {
   return (
     <div className="Chat">
       
-      {!user ? (
+      
         
-      ) : (
-        <>
           <ChatBox />
-        </>
-      )}
+        
+    
     </div>
   );
 }
