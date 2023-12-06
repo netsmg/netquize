@@ -1,11 +1,30 @@
 import React from 'react';
+import {ChatBox } from '../components';
 
-const Chat = () => {
+
+import { auth } from "./firebase";
+import { useAuthState } from "react-firebase-hooks/auth";
+import "./App.css";
+import NavBar from "./components/NavBar";
+import ChatBox from "./components/ChatBox";
+import Welcome from "./components/Welcome";
+
+function Chat() {
+  const [user] = useAuthState(auth);
+
   return (
-    <div className="iframe">
-    <iframe src="https://standardmindgame.vercel.app/chat.html" width="100%" height="768px"/>
-      </div>
+    <div className="Chat">
+      
+      {!user ? (
+        
+      ) : (
+        <>
+          <ChatBox />
+        </>
+      )}
+    </div>
   );
-};
+}
+
 
 export default Chat;
