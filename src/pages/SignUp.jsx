@@ -13,7 +13,7 @@ function SignUp() {
               </div>
             </div>
           </div>
-          <div className="container relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300 border-0">
+          <div className="container">
             <div className="flex flex-wrap -mx-3 -mt-48 md:-mt-56 lg:-mt-48">
               <div className="w-full max-w-full px-3 mx-auto mt-0 md:flex-0 shrink-0 md:w-7/12 lg:w-5/12 xl:w-4/12">
                 <div className="relative z-0 flex flex-col min-w-0 break-words bg-white border-0 shadow-soft-xl rounded-2xl bg-clip-border">
