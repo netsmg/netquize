@@ -6,8 +6,8 @@ function Login() {
     return (
 
       <div className="mt-0 transition-all duration-200 ease-soft-in-out">
-        <section className="absolute w-full h-full">
-          <div className="absolute top-0 w-full h-full bg-gray-900 relative flex items-start pt-12 pb-56 m-4 overflow-hidden bg-center bg-cover min-h-50-screen rounded-xl" style={{backgroundImage: 'url("assets/besr.jpg")'}}>
+        <section className="min-h-screen mb-32">
+          <div className="relative flex items-start pt-12 pb-56 m-4 overflow-hidden bg-center bg-cover min-h-50-screen rounded-xl" style={{backgroundImage: 'url("../soft-ui-dashboard-tailwind/assets/img/curved-images/curved14.jpg")'}}>
             <span className="absolute top-0 left-0 w-full h-full bg-center bg-cover bg-white-to-tl from-gray-900 to-slate-800 opacity-60" />
             <div className="container z-10">
               <div className="flex flex-wrap justify-center -mx-3">
@@ -79,5 +79,4 @@ function Login() {
 }
 
 export default Login;
-
 
