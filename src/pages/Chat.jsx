@@ -1,6 +1,6 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import * as firebase from 'firebase';
+import firebase from 'firebase';
 import { RaisedButton, TextField } from 'material-ui';
 import Paper from 'material-ui/Paper';
 
