@@ -14,8 +14,8 @@ export default defineConfig({
         "android-chrome-512x512.png",
       ],
       manifest: {
-        name: "Todos App",
-        short_name: "Todos",
+        name: "NetQuize",
+        short_name: "NetQuize",
         display: "standalone",
         theme_color: "hsl(280, 87%, 65%)",
         background_color: "hsl(280, 87%, 65%)",
