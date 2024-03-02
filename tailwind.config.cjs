@@ -12,13 +12,13 @@
         },
 
         colors: {
-          primary: '#CCCCFF',
-          'primary-darker': '#116f61',
-          secondary: '#ADD8E6',
-          light: '#F8F8F8',
-          dark: '#030707',
-          blue:'#ADD8E6'
-        },
+  primary: '#FFB6C1',        // Pale Pink
+  'primary-darker': '#FF69B4', // Hot Pink
+  secondary: '#87CEEB',      // Sky Blue
+  light: '#F0F8FF',          // Alice Blue
+  dark: '#696969',           // Dim Gray
+  blue:'#ADD8E6'             // Light Blue
+},
 
         fontFamily: {
           montserrat: ['Montserrat', 'sans-serif']
