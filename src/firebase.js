@@ -1,8 +1,8 @@
 import { initializeApp } from 'firebase/app';
 
 const app = initializeApp({
-  apiKey: "AIzaSyBzzaSTr42firr3fx5YcdXhDzB4iBLVBOM",
-  authDomain: "contact-database-9c47b.firebaseapp.com",
+  apiKey: "AIzaSyB6_twOhogk9QSRWVQQ1QAekLed-cqNVgQ",
+ authDomain: "contact-database-9c47b.firebaseapp.com",
   databaseURL: "https://contact-database-9c47b-default-rtdb.firebaseio.com",
   projectId: "contact-database-9c47b",
   storageBucket: "contact-database-9c47b.appspot.com",
