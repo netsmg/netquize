@@ -1,6 +1,13 @@
 {
-  "routes": [
-    { "src": "/manifest.json", "dest": "/public/manifest.json" },
-    { "handle": "filesystem" }
+  "rewrites": [
+    {
+      "source": "/manifest.json",
+      "destination": "/public/manifest.json"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
+    
   ]
 }
