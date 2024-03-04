@@ -1,6 +1,0 @@
-{
-  "routes": [
-    { "src": "/package.json", "dest": "/package.json" },
-    { "handle": "filesystem" }
-  ]
-}
