@@ -1,10 +1,10 @@
 import { Blogs } from '../components';
 
-function Blogs() { 
+function BlogsView() { 
     return (
        <Blogs />
     );
 
 }
 
-export default Blogs;
+export default BlogsView;
