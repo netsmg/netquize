@@ -35,7 +35,8 @@
     "react-router-dom": "^6.8.1",
     "react-visibility-sensor": "^5.1.1",
     "react-pwa-install": "^1.0.12",
-    "react-icons": "^4.8.0"
+    "react-icons": "^4.8.0",
+     "simplebar-react": "^3.2.4"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
