@@ -11,7 +11,7 @@ import Button from '@mui/material/Button';
 import { useTheme } from '@mui/material/styles';
 
 
-import firebaseApp from '../firebase'; 
+import firebaseApp from './firebase'; 
 
 export default function ContactView() {
   const theme = useTheme();
