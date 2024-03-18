@@ -1,5 +1,6 @@
 export { default as About } from './About';
 export { default as Blog } from './Blog';
+export { default as Blogs } from './Blogs';
 export { default as Blogpost } from './Blogpost';
 export { default as BlogPostDetails } from './Blogpostdetails';
 export { default as Chat } from './Chat';
