@@ -2,11 +2,7 @@ import { Blogs } from '../components';
 
 function Blogs() { 
     return (
-
-    
-                       <Blogs />
- 
-     
+       <Blogs />
     );
 
 }
