@@ -21,6 +21,7 @@ export { default as FileSaver } from './FileSaver';
 export { default as Footer } from './Footer';
 export { default as Lists } from './Lists';
 export { default as MainNavigationBar } from './MainNavigationBar';
+export { default as Posts } from './Posts';
 export { default as PopularQuizzes } from './PopularQuizzes';
 export { default as Preloader } from './Preloader';
 export { default as ProgressBar } from './ProgressBar';
