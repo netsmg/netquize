@@ -94,7 +94,7 @@ function Root() {
            <Route element={<SignUp />} path="/signup" />
           <Route element={<Resulto />} path="/resulto" />
           <Route element={<Faq />} path="/faq" />
-<Route element={<Exam />} path="/exam" />
+<Route element={<Exam />} path="/contact" />
 <Route element={<Dashboard />} path="/dashboard" />
 
 
