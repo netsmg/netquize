@@ -34,6 +34,7 @@ import {
   Login,
   Notification,
   PageNotFound,
+  Posts,
   Profile,
   Quiz,
   Quize,
@@ -106,6 +107,7 @@ function Root() {
           <Route path="login" element={<Login />} />
              <Route path="blogs" element={<Blogs />} />
           <Route path="blog" element={<Blog />} />
+ <Route element={<Posts />} errorElement={<PageNotFound />} path="posts/:id" />
           {/* Dynamically generate routes for each blog post */}
           {blogData.map((post) => (
             <Route key={post.id} path={`/blog/{blog.id}`} element={<BlogPostDetails post={post} />} />
@@ -120,8 +122,8 @@ function Root() {
         
             <Route element={<Quiz />} errorElement={<PageNotFound />} path="quiz/:id" />
             <Route element={<Quize />} errorElement={<PageNotFound />} path="quize/:id" />
-            
-            
+           
+         
             <Route element={<Video />} errorElement={<PageNotFound />} path="video/:id" />
             <Route element={<Profile />} path="profile" />
             <Route element={<Submissions />} path="submissions" />
