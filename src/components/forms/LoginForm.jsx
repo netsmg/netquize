@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
+import Button from '@mui/material/Button';
+import LoadingButton from '@mui/lab/LoadingButton';
+
 import { Form, TextInput } from '../';
 import { useAuth } from '../../contexts/AuthContext';
 import showAlert from '../AlertList';
@@ -77,12 +80,17 @@ function LoginForm() {
           Forgot Password?
         </Link>
       </div>
-      <button className="button" 
-        disabled={loading}
-        type="submit"
-      >
-        Log In
-      </button>
+          <LoadingButton
+      fullWidth
+      size="large"
+      type="submit"
+            disabled={loading}
+      variant="contained"
+      color="inherit"
+    >
+      Login
+    </LoadingButton>
+      
       <div className="text-center text-sm font-medium tracking-wide text-black dark:text-slate-300 md:text-base">
         Don&apos;t have an account?{' '}
         <span className="inline-block">
