@@ -50,7 +50,7 @@ export default function ContactView() {
   }, [id]);
 
   return (
-    <div>
+    <div className="flex max-w-sm flex-col content-center justify-start sm:flex-row">
       {contactData && (
         <Card
           variant="outlined"
