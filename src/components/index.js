@@ -1,4 +1,5 @@
 export { default as CheckBox } from './elements/CheckBox';
+export { default as ChatBox } from './elements/ChatBox';
 export { default as Form } from './elements/Form';
 export { default as NavButton } from './elements/NavButton';
 export { default as TextInput } from './elements/TextInput';
