@@ -1,6 +1,6 @@
 import { Link, Outlet } from 'react-router-dom';
 
-import { AuthenticationComponent, SubNavigationBar, SwitchTheme } from './';
+import { AuthenticationComponent, SubNavigationBar, Mini } from './';
 
 import { logo } from '../assets';
 
@@ -20,7 +20,7 @@ function MainNavigationBar() {
         </ul>
         <SubNavigationBar className="mr-7 hidden justify-end xl:flex" />
         <AuthenticationComponent />
-        <SwitchTheme />
+        <Mini />
       </nav>
       <SubNavigationBar className="navigation-bar absolute mt-[52px] flex justify-center py-2.5 pt-3 xl:hidden" />
       <Outlet />
