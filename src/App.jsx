@@ -21,9 +21,7 @@ import { AuthProvider } from './contexts/AuthContext';
 // Website Pages
 import {
   About,
-  Blog,
   Blogs,
-  BlogPostDetails,
   Chat,
   DetailedSubmission,
   Dashboard,
@@ -37,8 +35,6 @@ import {
   Posts,
   Profile,
   Quiz,
-  Quize,
-  Quizzes,
   Reset,
   Result,
   Resulto,
@@ -47,38 +43,6 @@ import {
   Service,
   Video
 } from './pages';
-
-const blogData = [
-  {
-    id: 1,
-    imageUrl: 'https://codewithsadee.github.io/vast/assets/images/blog-1.jpg',
-    date: 'May 22, 2022',
-    comments: 2,
-    title: 'Build A Full Web Chat App From Scratch',
-    link: '/blog/1', 
-    details: 'In todays digital age, blogging has become a powerful medium for individuals, businesses, and creators to share their thoughts, ideas, and expertise with the world. One of the most popular platforms for creating a blog is Blogger, a user-friendly platform owned by Google. Whether you are a beginner looking to start a personal blog or an aspiring professional blogger aiming to reach a wider audience, this guide will take you through the step-by-step process of creating a blog in Blogger, from the basics to pro-level strategies.'
-    // This is the link to the detailed blog post page
-  },
-  {
-    id: 2,
-    imageUrl: 'https://codewithsadee.github.io/vast/assets/images/blog-2.jpg',
-    date: 'June 10, 2022',
-    comments: 5,
-    title: 'Brush Strokes Energize Trees In Paintings',
-    link: '/blog/2',
-    details: 'In todays digital age, blogging has become a powerful medium for individuals, businesses, and creators to share their thoughts, ideas, and expertise with the world. One of the most popular platforms for creating a blog is Blogger, a user-friendly platform owned by Google. Whether you are a beginner looking to start a personal blog or an aspiring professional blogger aiming to reach a wider audience, this guide will take you through the step-by-step process of creating a blog in Blogger, from the basics to pro-level strategies.'
-  },
-  {id: 3,
-    imageUrl: 'https://codewithsadee.github.io/vast/assets/images/blog-2.jpg',
-    date: 'June 10, 2022',
-    comments: 5,
-    title: 'Brush Strokes Energize Trees In Paintings',
-    link: '/blog/3',
-    details: 'In todays digital age, blogging has become a powerful medium for individuals, businesses, and creators to share their thoughts, ideas, and expertise with the world. One of the most popular platforms for creating a blog is Blogger, a user-friendly platform owned by Google. Whether you are a beginner looking to start a personal blog or an aspiring professional blogger aiming to reach a wider audience, this guide will take you through the step-by-step process of creating a blog in Blogger, from the basics to pro-level strategies.'
-  },
-  
-  // Add more blog entries as needed
-];
 
 function Root() {
   return (
@@ -91,49 +55,30 @@ function Root() {
           <Route element={<About />} path="/about" />
           <Route element={<Reset />} path="/reset" />
           <Route element={<Learn />} path="/learn" />
-           <Route element={<SignUp />} path="/signup" />
-          <Route element={<Resulto />} path="/resulto" />
-          <Route element={<Faq />} path="/faq" />
-<Route element={<Exam />} path="/contact" />
-<Route element={<Dashboard />} path="/dashboard" />
-
-
-
-          
-           
-      
-           <Route path="/" element={<PublicOutlet />}>
-          <Route index element={<Home />} />
-          <Route path="login" element={<Login />} />
-             <Route path="blogs" element={<Blogs />} />
-          <Route path="blog" element={<Blog />} />
- <Route element={<Posts />} errorElement={<PageNotFound />} path="posts/:id" />
-          {/* Dynamically generate routes for each blog post */}
-          {blogData.map((post) => (
-            <Route key={post.id} path={`/blog/{blog.id}`} element={<BlogPostDetails post={post} />} />
-          ))}
-        </Route>
-
-          
+          <Route element={<PublicOutlet />} path="/">
+            <Route element={<SignUp />} path="signup" />
+            <Route element={<Login />} path="login" />
+                <Route element={<Faq />} path="faq" />
+                    <Route element={<Exam />} path="contact" />
+                        <Route element={<Resulto />} path="resulto" />
+                <Route path="blogs" element={<Blogs />} />
+          <Route element={<Posts />} 
+ path="posts/:id" />
+          </Route>
           <Route element={<PrivateOutlet />} path="/">
-            <Route element={<Chat />} path="chat"/>
-            <Route element={<Notification />} path="notification" />
-
-        
             <Route element={<Quiz />} errorElement={<PageNotFound />} path="quiz/:id" />
-            <Route element={<Quize />} errorElement={<PageNotFound />} path="quize/:id" />
-           
-         
             <Route element={<Video />} errorElement={<PageNotFound />} path="video/:id" />
             <Route element={<Profile />} path="profile" />
             <Route element={<Submissions />} path="submissions" />
-            <Route element={<Service />} path="service" />
             <Route
               element={<DetailedSubmission />}
               errorElement={<PageNotFound />}
               path="detailed-submission"
             />
             <Route element={<Result />} errorElement={<PageNotFound />} path="result/:id" />
+                 <Route element={<Chat />} path="chat"/>
+            <Route element={<Dashboard />} path="dashboard"/>         
+            <Route element={<Notification />} path="notification" />
           </Route>
           <Route element={<PageNotFound />} path="*" />
         </Route>
@@ -177,9 +122,9 @@ function App() {
             position="top-center"
             toastOptions={{
               style: {
-                color: '#000',
+                color: '#FFFFFF',
                 fontWeight: 600,
-                background: '#CCCCFF'
+                background: '#4B0082'
               },
               duration: 3000
             }}
