@@ -1,11 +1,10 @@
-import React from 'react';
+import { ChatBox } from '../components';
 
-const Chat = () => {
-  return (
-    <div className="iframe">
-    <iframe src="https://standardmindgame.vercel.app/chat.html" width="100%" height="768px"/>
-      </div>
-  );
-};
+function ChatView() { 
+    return (
+       <ChatBox />
+    );
 
-export default Chat;
+}
+
+export default ChatView;
