@@ -1,5 +1,6 @@
 import { useState } from 'react';
-
+import { Link } from 'react-router-dom';
+ 
 import Box from '@mui/material/Box';
 import Avatar from '@mui/material/Avatar';
 import Divider from '@mui/material/Divider';
@@ -19,6 +20,10 @@ const MENU_OPTIONS = [
   },
   {
     label: 'Profile',
+    icon: 'eva:person-fill',
+  },
+ {
+    label: 'Chat',
     icon: 'eva:person-fill',
   },
   {
@@ -85,10 +90,10 @@ export default function AccountPopover() {
         
 
         {MENU_OPTIONS.map((option) => (
-          <MenuItem key={option.label} onClick={handleClose}>
-            {option.label}
-          </MenuItem>
-        ))}
+  <MenuItem key={option.label} onClick={handleClose} component={Link} to={`/${option.label.toLowerCase()}`}>
+    {option.label}
+  </MenuItem>
+))}
 
         <Divider sx={{ borderStyle: 'dashed', m: 0 }} />
 
