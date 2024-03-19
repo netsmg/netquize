@@ -111,10 +111,8 @@ export default function AccountPopover() {
           <MenuItem key={option.label} onClick={handleClose} component={Link} to={`/${option.label.toLowerCase()}`}>
             {/* Display label and icon for each menu item */}
             <Typography variant="body1">
-              <Box component="span" sx={{ marginRight: 1 }}>
-                {option.icon}
-              </Box>
-              {option.label}
+              
+             {option.label}
             </Typography>
           </MenuItem>
         ))}
