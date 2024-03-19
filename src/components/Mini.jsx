@@ -27,6 +27,15 @@ const MENU_OPTIONS = [
     icon: 'eva:person-fill',
   },
   {
+    label: 'Blogs',
+    icon: 'eva:person-fill',
+  },
+{
+    label: 'Contact',
+    icon: 'eva:person-fill',
+  },
+
+  {
     label: 'Settings',
     icon: 'eva:settings-2-fill',
   },
@@ -95,16 +104,7 @@ export default function AccountPopover() {
   </MenuItem>
 ))}
 
-        <Divider sx={{ borderStyle: 'dashed', m: 0 }} />
-
-        <MenuItem
-          disableRipple
-          disableTouchRipple
-          onClick={handleClose}
-          sx={{ typography: 'body2', color: 'error.main', py: 1.5 }}
-        >
-          Logout
-        </MenuItem>
+        
       </Popover>
     </>
   );
