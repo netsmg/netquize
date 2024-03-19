@@ -1,5 +1,4 @@
 export { default as CheckBox } from './elements/CheckBox';
-export { default as ChatBox } from './elements/ChatBox';
 export { default as Form } from './elements/Form';
 export { default as NavButton } from './elements/NavButton';
 export { default as TextInput } from './elements/TextInput';
@@ -13,6 +12,7 @@ export { default as AnswerBox } from './AnswerBox';
 export { default as AuthenticationComponent } from './AuthenticationComponent';
 export { default as BasicInfo } from './BasicInfo';
 export { default as Blogs } from './Blogs';
+export { default as ChatBox } from './ChatBox';
 export { default as ContactUs } from './ContactUs';
 export { default as CountUpAnimation } from './CountUpAnimation';
 export { default as DesignComponent } from './DesignComponent';
