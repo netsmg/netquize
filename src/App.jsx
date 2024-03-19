@@ -35,6 +35,7 @@ import {
   Posts,
   Profile,
   Quiz,
+  Quizzes,
   Reset,
   Result,
   Resulto,
