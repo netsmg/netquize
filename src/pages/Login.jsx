@@ -24,7 +24,7 @@ import firebaseApp from './firebase';
 
 export default function LoginView() {
   const theme = useTheme();
-  const navigate = useNaviget();
+    const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -38,7 +38,7 @@ export default function LoginView() {
       const auth = getAuth();
       const provider = new GoogleAuthProvider();
       await signInWithPopup(auth, provider);
-      naviget('/dashboard');
+      navigate('/dashboard');
     } catch (error) {
       setLoginError(error.message);
     }
@@ -50,7 +50,7 @@ export default function LoginView() {
       const auth = getAuth();
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       const user = userCredential.user;
-      naviget('/dashboard');
+      navigate('/dashboard');
     } catch (error) {
       setLoginError(error.message);
     }
