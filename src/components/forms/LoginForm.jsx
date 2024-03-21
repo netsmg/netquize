@@ -4,7 +4,6 @@ import { Link, useNavigate } from 'react-router-dom';
 import LoadingButton from '@mui/lab/LoadingButton';
 import TextField from '@mui/material/TextField';
 import Stack from '@mui/material/Stack';
-import IconButton from '@mui/material/IconButton';
 import InputAdornment from '@mui/material/InputAdornment';
 
 
@@ -45,13 +44,19 @@ function LoginForm() {
       <TextField
         name="password" value={password} onChange={(e) => setPassword(e.target.value)} 
         label="Password"
-        type={showPassword ? 'text' : 'password'}
+        
         InputProps={{
           endAdornment: (
             <InputAdornment position="end">
-              <IconButton onClick={() => setShowPassword(!showPassword)} edge="end">
-                show
-              </IconButton>
+                 <button
+          className="material-symbols-outlined mx-1 flex cursor-pointer items-center justify-center text-black dark:text-white md:text-3xl"
+          type="button"
+          onClick={() => {
+            setShow(!show);
+          }}
+        >
+          {show ? 'visibility_off' : 'visibility'}
+        </button>
             </InputAdornment>
           ),
         }}
