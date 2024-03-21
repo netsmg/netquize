@@ -12,6 +12,8 @@ export default defineConfig({
         "favicon.ico",
         "apple-touch-icon.png",
         "android-chrome-512x512.png",
+        "Logo.svg",
+        "Logo.png",
       ],
       manifest: {
         name: "NetQuize",
