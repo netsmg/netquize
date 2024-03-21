@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
-import Button from '@mui/material/Button';
 import LoadingButton from '@mui/lab/LoadingButton';
+import TextField from '@mui/material/TextField';
+import Stack from '@mui/material/Stack';
 
-import { Form, TextInput } from '../';
 import { useAuth } from '../../contexts/AuthContext';
 import showAlert from '../AlertList';
 
@@ -35,44 +35,28 @@ function LoginForm() {
   }
 
   return (
-    <Form onSubmit={handleSubmit}>
-      <div className="mb-4">
-        <TextInput
-          required
-          icon="mail"
-          placeholder="Enter Registered Email ID"
-          type="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          className="text-sm focus:shadow-soft-primary-outline leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow"
-          aria-label="Email"
-          aria-describedby="email-addon"
-        />
-      </div>
-      <div className="mb-4">
-        <input
-          type="password"
-          className="text-sm focus:shadow-soft-primary-outline leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow"
-          placeholder="Enter Password"
-          type={show ? 'text' : 'password'}
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          aria-label="Password"
-          aria-describedby="password-addon"
-        />
-      </div>
-      <div>
-        <button
-          className="material-symbols-outlined mx-1 flex cursor-pointer items-center justify-center text-black dark:text-white md:text-3xl"
-          type="button"
-          onClick={() => {
-            setShow(!show);
-          }}
-        >
-          {show ? 'visibility_off' : 'visibility'}
-        </button>
-      </div>
-      <div className="ml-auto">
+    <form onSubmit={handleSubmit}>
+      
+    <Stack spacing={3}>
+      <TextField name="email" label="Email address" value={email} onChange={(e) => setEmail(e.target.value)} />
+      <TextField
+        name="password" value={password} onChange={(e) => setPassword(e.target.value)} 
+        label="Password"
+        type={showPassword ? 'text' : 'password'}
+        InputProps={{
+          endAdornment: (
+            <InputAdornment position="end">
+              <IconButton onClick={() => setShowPassword(!showPassword)} edge="end">
+                <Iconify icon={showPassword ? 'eva:eye-fill' : 'eva:eye-off-fill'} />
+              </IconButton>
+            </InputAdornment>
+          ),
+        }}
+      />
+    </Stack>
+      
+      
+     <div className="ml-auto">
         <Link
           className="link-text justify-self-end text-base font-medium tracking-wide"
           to="/reset"
@@ -100,7 +84,7 @@ function LoginForm() {
           instead.
         </span>
       </div>
-    </Form>
+    </form>
   );
 }
 
