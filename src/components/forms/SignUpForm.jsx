@@ -1,9 +1,14 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
-import { CheckBox, Form, TextInput } from '../';
-import { useAuth } from '../../contexts/AuthContext';
+import LoadingButton from '@mui/lab/LoadingButton';
+import TextField from '@mui/material/TextField';
+import Stack from '@mui/material/Stack';
+import InputAdornment from '@mui/material/InputAdornment';
+
+import { CheckBox } from '../';
 import showAlert from '../AlertList';
+import { useAuth } from '../../contexts/AuthContext';
 
 function SignUpForm() {
   const [userName, setUserName] = useState('');
@@ -40,39 +45,22 @@ function SignUpForm() {
   }
 
   return (
-    <Form className="gap-4" onSubmit={handleSubmit}>
-      <div className="mb-4">
-        <TextInput
-          required
-          className="text-sm focus:shadow-soft-primary-outline leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow"
-          icon="person"
-          placeholder="Enter Your Name"
-          type="text"
+    <form className="gap-4" onSubmit={handleSubmit}>
+        <Stack spacing={3}>
+            
+            <TextField name="username" label="UserName" type="text"
           value={userName}
           onChange={(e) => setUserName(e.target.value)}
-        />
-      </div>
-      <div className="mb-4">
-        <TextInput
-          required
-          icon="mail"
-          className="text-sm focus:shadow-soft-primary-outline leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow"
-          placeholder="Enter Email ID"
-          type="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-      </div>
-      <div className="mb-4">
-        <input
-          required
-          className="text-sm focus:shadow-soft-primary-outline leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow"
-          placeholder="Enter Password"
-          type={show ? 'text' : 'password'}
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <button
+           />
+      <TextField name="email" label="Email address" value={email} onChange={(e) => setEmail(e.target.value)} />
+      <TextField
+        name="password" value={password} onChange={(e) => setPassword(e.target.value)} 
+        label="Password"
+
+        InputProps={{
+          endAdornment: (
+            <InputAdornment position="end">
+                 <button
           className="material-symbols-outlined mx-1 flex cursor-pointer items-center justify-center text-black dark:text-white md:text-3xl"
           type="button"
           onClick={() => {
@@ -81,17 +69,33 @@ function SignUpForm() {
         >
           {show ? 'visibility_off' : 'visibility'}
         </button>
-      </div>
-      <div className="mb-4">
-        <TextInput
-          className="text-sm focus:shadow-soft-primary-outline leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow"
-          required
-          icon="lock"
-          placeholder="Confirm Password"
-          type="password"
+            </InputAdornment>
+          ),
+        }}
+      />
+      <TextField name="confirm password" label="Confirm Password"
+        type="password"
           value={confirmPassword}
           onChange={(e) => setConfirmPassword(e.target.value)}
-        />
+
+        InputProps={{
+          endAdornment: (
+            <InputAdornment position="end">
+                 <button
+          className="material-symbols-outlined mx-1 flex cursor-pointer items-center justify-center text-black dark:text-white md:text-3xl"
+          type="button"
+          onClick={() => {
+            setShow(!show);
+          }}
+        >
+          {show ? 'visibility_off' : 'visibility'}
+        </button>
+            </InputAdornment>
+          ),
+        }}
+      />
+    </Stack>
+      
         <CheckBox
           required
           className="mx-auto my-2 flex items-center justify-center text-sm font-medium tracking-wide text-black dark:text-white sm:text-base"
@@ -99,10 +103,17 @@ function SignUpForm() {
           value={consent}
           onChange={(e) => setConsent(e.target.value)}
         />
-      </div>
-      <button className="fill-button mt-2" disabled={loading} type="submit">
-        Sign Up
-      </button>
+      
+      <LoadingButton
+      fullWidth
+      size="large"
+      type="submit"
+            disabled={loading}
+      variant="contained"
+      color="inherit"
+    >
+      Register
+    </LoadingButton>
       <div className="-mt-1 text-center text-sm font-medium tracking-wide text-black dark:text-slate-300 md:text-base">
         Already have an account?{' '}
         <span className="inline-block">
@@ -112,8 +123,9 @@ function SignUpForm() {
           instead.
         </span>
       </div>
-    </Form>
+    </form>
   );
 }
 
 export default SignUpForm;
+
