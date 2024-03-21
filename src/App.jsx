@@ -34,6 +34,7 @@ import {
   PageNotFound,
   Posts,
   Profile,
+  Pricing,
   Quiz,
   Quizzes,
   Reset,
@@ -56,6 +57,8 @@ function Root() {
           <Route element={<About />} path="/about" />
           <Route element={<Reset />} path="/reset" />
           <Route element={<Learn />} path="/learn" />
+<Route element={<Pricing />} path="/pricing" />
+
           <Route element={<PublicOutlet />} path="/">
             <Route element={<SignUp />} path="signup" />
             <Route element={<Login />} path="login" />
