@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Container from '@mui/material/Container';
+import Grid from '@mui/material/Unstable_Grid2';
 import LoadingButton from '@mui/lab/LoadingButton';
 
 const PricingCard = ({ title, price, features }) => {
@@ -70,13 +72,16 @@ const PricingPage = () => {
   ];
 
   return (
-   <div className="mx-auto mb-32 flex min-h-screen w-[90%] animate-reveal flex-col items-center">
+<Container>
+      <Grid container spacing={3}>
+   
     <div className="flex justify-center">
       {plans.map((plan, index) => (
         <PricingCard key={index} title={plan.title} price={plan.price} features={plan.features} />
       ))}
     </div>
-    </div>
+    </Grid>
+</Container>
   );
 }
 
