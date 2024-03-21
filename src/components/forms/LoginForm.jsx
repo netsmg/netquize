@@ -4,6 +4,9 @@ import { Link, useNavigate } from 'react-router-dom';
 import LoadingButton from '@mui/lab/LoadingButton';
 import TextField from '@mui/material/TextField';
 import Stack from '@mui/material/Stack';
+import IconButton from '@mui/material/IconButton';
+import InputAdornment from '@mui/material/InputAdornment';
+
 
 import { useAuth } from '../../contexts/AuthContext';
 import showAlert from '../AlertList';
@@ -47,7 +50,7 @@ function LoginForm() {
           endAdornment: (
             <InputAdornment position="end">
               <IconButton onClick={() => setShowPassword(!showPassword)} edge="end">
-                <Iconify icon={showPassword ? 'eva:eye-fill' : 'eva:eye-off-fill'} />
+                show
               </IconButton>
             </InputAdornment>
           ),
