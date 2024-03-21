@@ -14,6 +14,8 @@ export default defineConfig({
         "android-chrome-512x512.png",
         "Logo.svg",
         "Logo.png",
+        "assets/Logo-ce358f5d.svg",
+        "assets/Hero-3b9a5e05.webp",
       ],
       manifest: {
         name: "NetQuize",
