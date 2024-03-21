@@ -3,6 +3,7 @@ import { LoginForm, SignInWithGoogleButton } from '../components';
 function Login() { 
     return (
 
+      <div className="mx-auto mb-32 flex min-h-screen w-[90%] animate-reveal flex-col items-center">
       <div className="mt-0 transition-all duration-200 ease-soft-in-out">
         <section className="min-h-screen mb-32">
           <div className="relative flex items-start pt-12 pb-56 m-4 overflow-hidden bg-center bg-cover min-h-50-screen rounded-xl">
@@ -72,6 +73,7 @@ function Login() {
           </div>
         </section>
       </div>
+</div>
     );
   
 }
