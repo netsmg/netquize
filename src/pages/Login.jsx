@@ -1,4 +1,10 @@
+import { Helmet } from 'react-helmet-async';
+
 import { LoginForm, SignInWithGoogleButton } from '../components';
+
+      <Helmet>
+        <title> Login | NetQuize </title>
+      </Helmet>
 
 function Login() { 
     return (
