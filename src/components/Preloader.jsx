@@ -1,8 +1,10 @@
 import React from 'react';
-import logo from '../assets';
+
+import { logo } from '../assets';
+
 import { Image, Progress, VStack, Text, HStack } from '@chakra-ui/react';
 
-function PreLoader() {
+function Preloader() {
   return (
     <VStack
       w='100%'
@@ -22,4 +24,6 @@ function PreLoader() {
   );
 }
 
-export default PreLoader;
+export default Preloader;
+
+
