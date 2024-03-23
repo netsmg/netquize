@@ -1,8 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/(.*)",
-      "destination": "/"
+      "source": "/^(?!\\/media|\\/public)(.*)$/",
+      "destination": "/$1"
     }
   ]
 }
