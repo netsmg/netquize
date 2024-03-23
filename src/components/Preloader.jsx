@@ -1,29 +1,11 @@
-import React from 'react';
-
-import { logo } from '../assets';
-
-import { Image, Progress, VStack, Text, HStack } from '@chakra-ui/react';
+import { logo } from '../assets';import { logo } from '../assets';
 
 function Preloader() {
   return (
-    <VStack
-      w='100%'
-      h='100vh'
-      spacing='4'
-      justifyContent='center'
-      alignItems='center'
-    >
-      <Image src={logo} width='150px' />
-      <Progress size='xs' w='40%' colorScheme='brown' isIndeterminate />
-      <HStack>
-        <Text fontWeight='300' color='gray.400'>
-          search less, wear more
-        </Text>
-      </HStack>
-    </VStack>
+    <div className="absolute left-0 top-0 flex h-screen w-screen items-center justify-center bg-light dark:bg-dark">
+      <img alt="Quizzy" className="w-24 animate-fade-upwards opacity-0" src={logo} />
+    </div>
   );
 }
 
 export default Preloader;
-
-
